@@ -1,0 +1,507 @@
+
+        <!DOCTYPE html>
+        <html lang="zh-CN">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>DuPont Tedlar 销售线索仪表盘</title>
+            <style>
+                body {
+                    font-family: Arial, sans-serif;
+                    margin: 0;
+                    padding: 20px;
+                    background-color: #f5f5f5;
+                }
+                .container {
+                    max-width: 1200px;
+                    margin: 0 auto;
+                    background-color: white;
+                    padding: 20px;
+                    border-radius: 5px;
+                    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+                }
+                h1 {
+                    color: #003366;
+                    text-align: center;
+                }
+                .summary {
+                    background-color: #e6f2ff;
+                    padding: 15px;
+                    border-radius: 5px;
+                    margin-bottom: 20px;
+                }
+                .lead-card {
+                    border: 1px solid #ddd;
+                    border-radius: 5px;
+                    padding: 15px;
+                    margin-bottom: 15px;
+                    background-color: white;
+                }
+                .lead-card:hover {
+                    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+                }
+                .lead-header {
+                    display: flex;
+                    justify-content: space-between;
+                    border-bottom: 1px solid #eee;
+                    padding-bottom: 10px;
+                    margin-bottom: 10px;
+                }
+                .lead-name {
+                    font-weight: bold;
+                    font-size: 18px;
+                    color: #003366;
+                }
+                .lead-score {
+                    background-color: #003366;
+                    color: white;
+                    padding: 3px 8px;
+                    border-radius: 12px;
+                    font-size: 14px;
+                }
+                .lead-details {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    gap: 10px;
+                }
+                .lead-company {
+                    font-weight: bold;
+                }
+                .lead-message {
+                    background-color: #f9f9f9;
+                    padding: 10px;
+                    border-radius: 5px;
+                    margin-top: 10px;
+                    white-space: pre-line;
+                }
+                .lead-links {
+                    margin-top: 10px;
+                }
+                .lead-links a {
+                    color: #0066cc;
+                    text-decoration: none;
+                    margin-right: 15px;
+                }
+                .lead-links a:hover {
+                    text-decoration: underline;
+                }
+            </style>
+        </head>
+        <body>
+            <div class="container">
+                <h1>DuPont Tedlar 销售线索仪表盘</h1>
+                
+                <div class="summary">
+                    <h2>摘要</h2>
+                    <p>共发现 <strong>43</strong> 条潜在销售线索</p>
+                    <p>高优先级线索 (得分 > 80): <strong>25</strong></p>
+                    <p>中优先级线索 (得分 60-80): <strong>18</strong></p>
+                    <p>低优先级线索 (得分 < 60): <strong>0</strong></p>
+                </div>
+                
+                <h2>高优先级销售线索</h2>
+        
+                <div class="lead-card">
+                    <div class="lead-header">
+                        <div class="lead-name">Laura Wilson</div>
+                        <div class="lead-score">得分: 110</div>
+                    </div>
+                    <div class="lead-details">
+                        <div>
+                            <div><strong>职位:</strong> VP of Product Development</div>
+                            <div><strong>公司:</strong> Roland DGA Corporation</div>
+                            <div><strong>决策权:</strong> Very High</div>
+                        </div>
+                        <div>
+                            <div><strong>电子邮件:</strong> laura.wilson@rolanddgacorporation.com</div>
+                            <div><strong>公司ICP得分:</strong> 60</div>
+                            <div><strong>相关性得分:</strong> 94</div>
+                        </div>
+                    </div>
+                    <div class="lead-message">
+                        <strong>建议外联消息:</strong><br>
+                        
+        尊敬的Laura Wilson：
+
+        我是DuPont Tedlar团队的销售代表。了解到您作为Roland DGA Corporation的VP of Product Development，可能对我们的高性能保护膜解决方案感兴趣。
+
+        Tedlar保护膜具有卓越的耐候性和耐久性，特别适合Graphics & Signage行业的应用。我们的客户发现，使用Tedlar可以显著延长产品寿命，减少维护成本。
+
+        我想安排一个简短的通话，讨论Tedlar如何为Roland DGA Corporation创造价值。您有时间简单交流吗？
+
+        期待您的回复！
+
+        祝好，
+        DuPont Tedlar团队
+        
+                    </div>
+                    <div class="lead-links">
+                        <a href="https://www.linkedin.com/in/laura-wilson-74761/" target="_blank">LinkedIn资料</a>
+                        <a href="mailto:laura.wilson@rolanddgacorporation.com">发送邮件</a>
+                    </div>
+                </div>
+            
+                <div class="lead-card">
+                    <div class="lead-header">
+                        <div class="lead-name">John Miller</div>
+                        <div class="lead-score">得分: 108</div>
+                    </div>
+                    <div class="lead-details">
+                        <div>
+                            <div><strong>职位:</strong> Chief Technology Officer</div>
+                            <div><strong>公司:</strong> Mactac Graphic Products</div>
+                            <div><strong>决策权:</strong> Very High</div>
+                        </div>
+                        <div>
+                            <div><strong>电子邮件:</strong> john.miller@mactacgraphicproducts.com</div>
+                            <div><strong>公司ICP得分:</strong> 60</div>
+                            <div><strong>相关性得分:</strong> 91</div>
+                        </div>
+                    </div>
+                    <div class="lead-message">
+                        <strong>建议外联消息:</strong><br>
+                        
+        尊敬的John Miller：
+
+        我是DuPont Tedlar团队的销售代表。了解到您作为Mactac Graphic Products的Chief Technology Officer，可能对我们的高性能保护膜解决方案感兴趣。
+
+        Tedlar保护膜具有卓越的耐候性和耐久性，特别适合Graphics & Signage行业的应用。我们的客户发现，使用Tedlar可以显著延长产品寿命，减少维护成本。
+
+        我想安排一个简短的通话，讨论Tedlar如何为Mactac Graphic Products创造价值。您有时间简单交流吗？
+
+        期待您的回复！
+
+        祝好，
+        DuPont Tedlar团队
+        
+                    </div>
+                    <div class="lead-links">
+                        <a href="https://www.linkedin.com/in/john-miller-97469/" target="_blank">LinkedIn资料</a>
+                        <a href="mailto:john.miller@mactacgraphicproducts.com">发送邮件</a>
+                    </div>
+                </div>
+            
+                <div class="lead-card">
+                    <div class="lead-header">
+                        <div class="lead-name">Sarah Miller</div>
+                        <div class="lead-score">得分: 107</div>
+                    </div>
+                    <div class="lead-details">
+                        <div>
+                            <div><strong>职位:</strong> VP of Product Development</div>
+                            <div><strong>公司:</strong> Arlon Graphics LLC</div>
+                            <div><strong>决策权:</strong> Very High</div>
+                        </div>
+                        <div>
+                            <div><strong>电子邮件:</strong> sarah.miller@arlongraphicsllc.com</div>
+                            <div><strong>公司ICP得分:</strong> 60</div>
+                            <div><strong>相关性得分:</strong> 89</div>
+                        </div>
+                    </div>
+                    <div class="lead-message">
+                        <strong>建议外联消息:</strong><br>
+                        
+        尊敬的Sarah Miller：
+
+        我是DuPont Tedlar团队的销售代表。了解到您作为Arlon Graphics LLC的VP of Product Development，可能对我们的高性能保护膜解决方案感兴趣。
+
+        Tedlar保护膜具有卓越的耐候性和耐久性，特别适合Graphics & Signage行业的应用。我们的客户发现，使用Tedlar可以显著延长产品寿命，减少维护成本。
+
+        我想安排一个简短的通话，讨论Tedlar如何为Arlon Graphics LLC创造价值。您有时间简单交流吗？
+
+        期待您的回复！
+
+        祝好，
+        DuPont Tedlar团队
+        
+                    </div>
+                    <div class="lead-links">
+                        <a href="https://www.linkedin.com/in/sarah-miller-57920/" target="_blank">LinkedIn资料</a>
+                        <a href="mailto:sarah.miller@arlongraphicsllc.com">发送邮件</a>
+                    </div>
+                </div>
+            
+                <div class="lead-card">
+                    <div class="lead-header">
+                        <div class="lead-name">Laura Smith</div>
+                        <div class="lead-score">得分: 107</div>
+                    </div>
+                    <div class="lead-details">
+                        <div>
+                            <div><strong>职位:</strong> VP of Product Development</div>
+                            <div><strong>公司:</strong> Durst Image Technology</div>
+                            <div><strong>决策权:</strong> Very High</div>
+                        </div>
+                        <div>
+                            <div><strong>电子邮件:</strong> laura.smith@durstimagetechnology.com</div>
+                            <div><strong>公司ICP得分:</strong> 60</div>
+                            <div><strong>相关性得分:</strong> 89</div>
+                        </div>
+                    </div>
+                    <div class="lead-message">
+                        <strong>建议外联消息:</strong><br>
+                        
+        尊敬的Laura Smith：
+
+        我是DuPont Tedlar团队的销售代表。了解到您作为Durst Image Technology的VP of Product Development，可能对我们的高性能保护膜解决方案感兴趣。
+
+        Tedlar保护膜具有卓越的耐候性和耐久性，特别适合Graphics & Signage行业的应用。我们的客户发现，使用Tedlar可以显著延长产品寿命，减少维护成本。
+
+        我想安排一个简短的通话，讨论Tedlar如何为Durst Image Technology创造价值。您有时间简单交流吗？
+
+        期待您的回复！
+
+        祝好，
+        DuPont Tedlar团队
+        
+                    </div>
+                    <div class="lead-links">
+                        <a href="https://www.linkedin.com/in/laura-smith-11229/" target="_blank">LinkedIn资料</a>
+                        <a href="mailto:laura.smith@durstimagetechnology.com">发送邮件</a>
+                    </div>
+                </div>
+            
+                <div class="lead-card">
+                    <div class="lead-header">
+                        <div class="lead-name">William Johnson</div>
+                        <div class="lead-score">得分: 106</div>
+                    </div>
+                    <div class="lead-details">
+                        <div>
+                            <div><strong>职位:</strong> Purchasing Manager</div>
+                            <div><strong>公司:</strong> HP Inc. Large Format Division</div>
+                            <div><strong>决策权:</strong> Very High</div>
+                        </div>
+                        <div>
+                            <div><strong>电子邮件:</strong> william.johnson@hpinclargeformatdivision.com</div>
+                            <div><strong>公司ICP得分:</strong> 60</div>
+                            <div><strong>相关性得分:</strong> 88</div>
+                        </div>
+                    </div>
+                    <div class="lead-message">
+                        <strong>建议外联消息:</strong><br>
+                        
+        尊敬的William Johnson：
+
+        我是DuPont Tedlar团队的销售代表。了解到您作为HP Inc. Large Format Division的Purchasing Manager，可能对我们的高性能保护膜解决方案感兴趣。
+
+        Tedlar保护膜具有卓越的耐候性和耐久性，特别适合Graphics & Signage行业的应用。我们的客户发现，使用Tedlar可以显著延长产品寿命，减少维护成本。
+
+        我想安排一个简短的通话，讨论Tedlar如何为HP Inc. Large Format Division创造价值。您有时间简单交流吗？
+
+        期待您的回复！
+
+        祝好，
+        DuPont Tedlar团队
+        
+                    </div>
+                    <div class="lead-links">
+                        <a href="https://www.linkedin.com/in/william-johnson-95293/" target="_blank">LinkedIn资料</a>
+                        <a href="mailto:william.johnson@hpinclargeformatdivision.com">发送邮件</a>
+                    </div>
+                </div>
+            
+                <div class="lead-card">
+                    <div class="lead-header">
+                        <div class="lead-name">Sarah Jones</div>
+                        <div class="lead-score">得分: 106</div>
+                    </div>
+                    <div class="lead-details">
+                        <div>
+                            <div><strong>职位:</strong> Chief Technology Officer</div>
+                            <div><strong>公司:</strong> FLEXcon Company</div>
+                            <div><strong>决策权:</strong> Very High</div>
+                        </div>
+                        <div>
+                            <div><strong>电子邮件:</strong> sarah.jones@flexconcompany.com</div>
+                            <div><strong>公司ICP得分:</strong> 60</div>
+                            <div><strong>相关性得分:</strong> 88</div>
+                        </div>
+                    </div>
+                    <div class="lead-message">
+                        <strong>建议外联消息:</strong><br>
+                        
+        尊敬的Sarah Jones：
+
+        我是DuPont Tedlar团队的销售代表。了解到您作为FLEXcon Company的Chief Technology Officer，可能对我们的高性能保护膜解决方案感兴趣。
+
+        Tedlar保护膜具有卓越的耐候性和耐久性，特别适合Graphics & Signage行业的应用。我们的客户发现，使用Tedlar可以显著延长产品寿命，减少维护成本。
+
+        我想安排一个简短的通话，讨论Tedlar如何为FLEXcon Company创造价值。您有时间简单交流吗？
+
+        期待您的回复！
+
+        祝好，
+        DuPont Tedlar团队
+        
+                    </div>
+                    <div class="lead-links">
+                        <a href="https://www.linkedin.com/in/sarah-jones-82715/" target="_blank">LinkedIn资料</a>
+                        <a href="mailto:sarah.jones@flexconcompany.com">发送邮件</a>
+                    </div>
+                </div>
+            
+                <div class="lead-card">
+                    <div class="lead-header">
+                        <div class="lead-name">Robert Wilson</div>
+                        <div class="lead-score">得分: 102</div>
+                    </div>
+                    <div class="lead-details">
+                        <div>
+                            <div><strong>职位:</strong> R&D Leader</div>
+                            <div><strong>公司:</strong> Hexis S.A.</div>
+                            <div><strong>决策权:</strong> Very High</div>
+                        </div>
+                        <div>
+                            <div><strong>电子邮件:</strong> robert.wilson@hexissa.com</div>
+                            <div><strong>公司ICP得分:</strong> 60</div>
+                            <div><strong>相关性得分:</strong> 81</div>
+                        </div>
+                    </div>
+                    <div class="lead-message">
+                        <strong>建议外联消息:</strong><br>
+                        
+        尊敬的Robert Wilson：
+
+        我是DuPont Tedlar团队的销售代表。了解到您作为Hexis S.A.的R&D Leader，可能对我们的高性能保护膜解决方案感兴趣。
+
+        Tedlar保护膜具有卓越的耐候性和耐久性，特别适合Graphics & Signage行业的应用。我们的客户发现，使用Tedlar可以显著延长产品寿命，减少维护成本。
+
+        我想安排一个简短的通话，讨论Tedlar如何为Hexis S.A.创造价值。您有时间简单交流吗？
+
+        期待您的回复！
+
+        祝好，
+        DuPont Tedlar团队
+        
+                    </div>
+                    <div class="lead-links">
+                        <a href="https://www.linkedin.com/in/robert-wilson-10386/" target="_blank">LinkedIn资料</a>
+                        <a href="mailto:robert.wilson@hexissa.com">发送邮件</a>
+                    </div>
+                </div>
+            
+                <div class="lead-card">
+                    <div class="lead-header">
+                        <div class="lead-name">Laura Taylor</div>
+                        <div class="lead-score">得分: 102</div>
+                    </div>
+                    <div class="lead-details">
+                        <div>
+                            <div><strong>职位:</strong> Chief Technology Officer</div>
+                            <div><strong>公司:</strong> EFI</div>
+                            <div><strong>决策权:</strong> Very High</div>
+                        </div>
+                        <div>
+                            <div><strong>电子邮件:</strong> laura.taylor@efi.com</div>
+                            <div><strong>公司ICP得分:</strong> 60</div>
+                            <div><strong>相关性得分:</strong> 80</div>
+                        </div>
+                    </div>
+                    <div class="lead-message">
+                        <strong>建议外联消息:</strong><br>
+                        
+        尊敬的Laura Taylor：
+
+        我是DuPont Tedlar团队的销售代表。了解到您作为EFI的Chief Technology Officer，可能对我们的高性能保护膜解决方案感兴趣。
+
+        Tedlar保护膜具有卓越的耐候性和耐久性，特别适合Graphics & Signage行业的应用。我们的客户发现，使用Tedlar可以显著延长产品寿命，减少维护成本。
+
+        我想安排一个简短的通话，讨论Tedlar如何为EFI创造价值。您有时间简单交流吗？
+
+        期待您的回复！
+
+        祝好，
+        DuPont Tedlar团队
+        
+                    </div>
+                    <div class="lead-links">
+                        <a href="https://www.linkedin.com/in/laura-taylor-66307/" target="_blank">LinkedIn资料</a>
+                        <a href="mailto:laura.taylor@efi.com">发送邮件</a>
+                    </div>
+                </div>
+            
+                <div class="lead-card">
+                    <div class="lead-header">
+                        <div class="lead-name">David Williams</div>
+                        <div class="lead-score">得分: 100</div>
+                    </div>
+                    <div class="lead-details">
+                        <div>
+                            <div><strong>职位:</strong> Chief Technology Officer</div>
+                            <div><strong>公司:</strong> Canon Solutions America</div>
+                            <div><strong>决策权:</strong> Very High</div>
+                        </div>
+                        <div>
+                            <div><strong>电子邮件:</strong> david.williams@canonsolutionsamerica.com</div>
+                            <div><strong>公司ICP得分:</strong> 60</div>
+                            <div><strong>相关性得分:</strong> 78</div>
+                        </div>
+                    </div>
+                    <div class="lead-message">
+                        <strong>建议外联消息:</strong><br>
+                        
+        尊敬的David Williams：
+
+        我是DuPont Tedlar团队的销售代表。了解到您作为Canon Solutions America的Chief Technology Officer，可能对我们的高性能保护膜解决方案感兴趣。
+
+        Tedlar保护膜具有卓越的耐候性和耐久性，特别适合Graphics & Signage行业的应用。我们的客户发现，使用Tedlar可以显著延长产品寿命，减少维护成本。
+
+        我想安排一个简短的通话，讨论Tedlar如何为Canon Solutions America创造价值。您有时间简单交流吗？
+
+        期待您的回复！
+
+        祝好，
+        DuPont Tedlar团队
+        
+                    </div>
+                    <div class="lead-links">
+                        <a href="https://www.linkedin.com/in/david-williams-98171/" target="_blank">LinkedIn资料</a>
+                        <a href="mailto:david.williams@canonsolutionsamerica.com">发送邮件</a>
+                    </div>
+                </div>
+            
+                <div class="lead-card">
+                    <div class="lead-header">
+                        <div class="lead-name">Jennifer Moore</div>
+                        <div class="lead-score">得分: 100</div>
+                    </div>
+                    <div class="lead-details">
+                        <div>
+                            <div><strong>职位:</strong> Head of Product</div>
+                            <div><strong>公司:</strong> Canon Solutions America</div>
+                            <div><strong>决策权:</strong> Very High</div>
+                        </div>
+                        <div>
+                            <div><strong>电子邮件:</strong> jennifer.moore@canonsolutionsamerica.com</div>
+                            <div><strong>公司ICP得分:</strong> 60</div>
+                            <div><strong>相关性得分:</strong> 77</div>
+                        </div>
+                    </div>
+                    <div class="lead-message">
+                        <strong>建议外联消息:</strong><br>
+                        
+        尊敬的Jennifer Moore：
+
+        我是DuPont Tedlar团队的销售代表。了解到您作为Canon Solutions America的Head of Product，可能对我们的高性能保护膜解决方案感兴趣。
+
+        Tedlar保护膜具有卓越的耐候性和耐久性，特别适合Graphics & Signage行业的应用。我们的客户发现，使用Tedlar可以显著延长产品寿命，减少维护成本。
+
+        我想安排一个简短的通话，讨论Tedlar如何为Canon Solutions America创造价值。您有时间简单交流吗？
+
+        期待您的回复！
+
+        祝好，
+        DuPont Tedlar团队
+        
+                    </div>
+                    <div class="lead-links">
+                        <a href="https://www.linkedin.com/in/jennifer-moore-43719/" target="_blank">LinkedIn资料</a>
+                        <a href="mailto:jennifer.moore@canonsolutionsamerica.com">发送邮件</a>
+                    </div>
+                </div>
+            
+            </div>
+        </body>
+        </html>
+        
