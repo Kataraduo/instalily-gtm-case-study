@@ -1,52 +1,45 @@
 first_name,last_name,name,email,title,company,linkedin_url,source,decision_making_power,id
-FirstName1,LastName1,FirstName1 LastName1,firstname1.lastname1@cutworxusa.com,Director of Purchasing,CUTWORX USA,,Synthetic,0.9,STAKE-0001
-FirstName2,LastName2,FirstName2 LastName2,firstname2.lastname2@cutworxusa.com,Technical Manager,CUTWORX USA,,Synthetic,0.7,STAKE-0002
-FirstName3,LastName3,FirstName3 LastName3,firstname3.lastname3@cutworxusa.com,Operations VP,CUTWORX USA,,Synthetic,0.8,STAKE-0003
-FirstName4,LastName4,FirstName4 LastName4,firstname4.lastname4@cutworxusa.com,Director of Marketing,CUTWORX USA,,Synthetic,0.9,STAKE-0004
-FirstName1,LastName1,FirstName1 LastName1,firstname1.lastname1@generalformulations.com,Technical Director,General Formulations,,Synthetic,0.9,STAKE-0005
-FirstName2,LastName2,FirstName2 LastName2,firstname2.lastname2@generalformulations.com,VP of Sales,General Formulations,,Synthetic,0.6,STAKE-0006
-FirstName3,LastName3,FirstName3 LastName3,firstname3.lastname3@generalformulations.com,CFO,General Formulations,,Synthetic,0.9,STAKE-0007
-FirstName4,LastName4,FirstName4 LastName4,firstname4.lastname4@generalformulations.com,Facility Manager,General Formulations,,Synthetic,0.8,STAKE-0008
-FirstName1,LastName1,FirstName1 LastName1,firstname1.lastname1@lagunatools.com,Technical Director,Laguna Tools Inc.,,Synthetic,0.9,STAKE-0009
-FirstName2,LastName2,FirstName2 LastName2,firstname2.lastname2@lagunatools.com,Creative Director,Laguna Tools Inc.,,Synthetic,0.9,STAKE-0010
-FirstName3,LastName3,FirstName3 LastName3,firstname3.lastname3@lagunatools.com,Operations VP,Laguna Tools Inc.,,Synthetic,0.8,STAKE-0011
-FirstName4,LastName4,FirstName4 LastName4,firstname4.lastname4@lagunatools.com,Client Relations Manager,Laguna Tools Inc.,,Synthetic,0.6,STAKE-0012
-FirstName1,LastName1,FirstName1 LastName1,firstname1.lastname1@lintecofamerica.com,Sales Director,"Lintec of America, Inc.",,Synthetic,0.9,STAKE-0013
-FirstName2,LastName2,FirstName2 LastName2,firstname2.lastname2@lintecofamerica.com,Marketing Director,"Lintec of America, Inc.",,Synthetic,0.9,STAKE-0014
-FirstName3,LastName3,FirstName3 LastName3,firstname3.lastname3@lintecofamerica.com,Director of Purchasing,"Lintec of America, Inc.",,Synthetic,0.9,STAKE-0015
-FirstName4,LastName4,FirstName4 LastName4,firstname4.lastname4@lintecofamerica.com,Director of Operations,"Lintec of America, Inc.",,Synthetic,0.9,STAKE-0016
-FirstName1,LastName1,FirstName1 LastName1,firstname1.lastname1@signagedetails.com,Chief Operating Officer,Signage Details,,Synthetic,0.9,STAKE-0017
-FirstName2,LastName2,FirstName2 LastName2,firstname2.lastname2@signagedetails.com,Director of Sales,Signage Details,,Synthetic,0.9,STAKE-0018
-FirstName1,LastName1,FirstName1 LastName1,firstname1.lastname1@3acompositesusa.com,Brand Manager,"3A Composites USA, Inc.",,Synthetic,0.7,STAKE-0019
-FirstName2,LastName2,FirstName2 LastName2,firstname2.lastname2@3acompositesusa.com,Operations VP,"3A Composites USA, Inc.",,Synthetic,0.8,STAKE-0020
-FirstName1,LastName1,FirstName1 LastName1,firstname1.lastname1@3m.com,Client Relations Manager,3M Commercial Solutions,,Synthetic,0.6,STAKE-0021
-FirstName2,LastName2,FirstName2 LastName2,firstname2.lastname2@3m.com,Purchasing VP,3M Commercial Solutions,,Synthetic,0.8,STAKE-0022
-FirstName3,LastName3,FirstName3 LastName3,firstname3.lastname3@3m.com,Director of Technology,3M Commercial Solutions,,Synthetic,0.9,STAKE-0023
-FirstName4,LastName4,FirstName4 LastName4,firstname4.lastname4@3m.com,VP of Operations,3M Commercial Solutions,,Synthetic,0.8,STAKE-0024
-FirstName1,LastName1,FirstName1 LastName1,firstname1.lastname1@arkramos.com,Creative Director,A.R.K. Ramos Foundry & Mfg. Co.,,Synthetic,0.9,STAKE-0025
-FirstName2,LastName2,FirstName2 LastName2,firstname2.lastname2@arkramos.com,VP of Sales,A.R.K. Ramos Foundry & Mfg. Co.,,Synthetic,0.6,STAKE-0026
-FirstName1,LastName1,FirstName1 LastName1,firstname1.lastname1@abitech.com,CEO,Abitech,,Synthetic,0.9,STAKE-0027
-FirstName2,LastName2,FirstName2 LastName2,firstname2.lastname2@abitech.com,Purchasing VP,Abitech,,Synthetic,0.8,STAKE-0028
-FirstName3,LastName3,FirstName3 LastName3,firstname3.lastname3@abitech.com,Innovation Manager,Abitech,,Synthetic,0.7,STAKE-0029
-FirstName4,LastName4,FirstName4 LastName4,firstname4.lastname4@abitech.com,VP of Operations,Abitech,,Synthetic,0.8,STAKE-0030
-FirstName1,LastName1,FirstName1 LastName1,firstname1.lastname1@admaxdisplays.com,Purchasing Director,ADMAX Exhibit & Display Ltd.,,Synthetic,0.9,STAKE-0031
-FirstName2,LastName2,FirstName2 LastName2,firstname2.lastname2@admaxdisplays.com,Operations VP,ADMAX Exhibit & Display Ltd.,,Synthetic,0.8,STAKE-0032
-FirstName1,LastName1,FirstName1 LastName1,firstname1.lastname1@aglaminators.com,Operations Director,"Advanced Greig Laminators, Inc.",,Synthetic,0.9,STAKE-0033
-FirstName2,LastName2,FirstName2 LastName2,firstname2.lastname2@aglaminators.com,Client Relations Manager,"Advanced Greig Laminators, Inc.",,Synthetic,0.6,STAKE-0034
-FirstName3,LastName3,FirstName3 LastName3,firstname3.lastname3@aglaminators.com,Marketing VP,"Advanced Greig Laminators, Inc.",,Synthetic,0.7,STAKE-0035
-FirstName4,LastName4,FirstName4 LastName4,firstname4.lastname4@aglaminators.com,Chief Operating Officer,"Advanced Greig Laminators, Inc.",,Synthetic,0.9,STAKE-0036
-FirstName1,LastName1,FirstName1 LastName1,firstname1.lastname1@advantageinnovations.com,Facility Manager,"Advantage Innovations, Inc",,Synthetic,0.8,STAKE-0037
-FirstName2,LastName2,FirstName2 LastName2,firstname2.lastname2@advantageinnovations.com,Innovation Manager,"Advantage Innovations, Inc",,Synthetic,0.7,STAKE-0038
-FirstName3,LastName3,FirstName3 LastName3,firstname3.lastname3@advantageinnovations.com,Client Relations Manager,"Advantage Innovations, Inc",,Synthetic,0.6,STAKE-0039
-FirstName1,LastName1,FirstName1 LastName1,firstname1.lastname1@aludecor.com,VP of Operations,Aludecor,,Synthetic,0.8,STAKE-0040
-FirstName2,LastName2,FirstName2 LastName2,firstname2.lastname2@aludecor.com,Director of Technology,Aludecor,,Synthetic,0.9,STAKE-0041
-FirstName3,LastName3,FirstName3 LastName3,firstname3.lastname3@aludecor.com,Client Relations Manager,Aludecor,,Synthetic,0.6,STAKE-0042
-FirstName4,LastName4,FirstName4 LastName4,firstname4.lastname4@aludecor.com,VP of Purchasing,Aludecor,,Synthetic,0.8,STAKE-0043
-FirstName1,LastName1,FirstName1 LastName1,firstname1.lastname1@arlon.com,CFO,Arlon Graphics,,Synthetic,0.9,STAKE-0044
-FirstName2,LastName2,FirstName2 LastName2,firstname2.lastname2@arlon.com,Purchasing Manager,Arlon Graphics,,Synthetic,0.8,STAKE-0045
-FirstName3,LastName3,FirstName3 LastName3,firstname3.lastname3@arlon.com,Project Manager,Arlon Graphics,,Synthetic,0.7,STAKE-0046
-FirstName4,LastName4,FirstName4 LastName4,firstname4.lastname4@arlon.com,Creative Director,Arlon Graphics,,Synthetic,0.9,STAKE-0047
-FirstName1,LastName1,FirstName1 LastName1,firstname1.lastname1@graphics.averydennison.com,Facility Manager,Avery Dennison Graphics Solutions,,Synthetic,0.8,STAKE-0048
-FirstName2,LastName2,FirstName2 LastName2,firstname2.lastname2@graphics.averydennison.com,Creative Director,Avery Dennison Graphics Solutions,,Synthetic,0.9,STAKE-0049
-FirstName3,LastName3,FirstName3 LastName3,firstname3.lastname3@graphics.averydennison.com,Project Manager,Avery Dennison Graphics Solutions,,Synthetic,0.7,STAKE-0050
-FirstName4,LastName4,FirstName4 LastName4,firstname4.lastname4@graphics.averydennison.com,Sales Director,Avery Dennison Graphics Solutions,,Synthetic,0.9,STAKE-0051
+FirstName1,LastName1,FirstName1 LastName1,firstname1.lastname1@cutworxusa.com,Technical Manager,CUTWORX USA,,Synthetic,0.7,STAKE-0001
+FirstName2,LastName2,FirstName2 LastName2,firstname2.lastname2@cutworxusa.com,Sales VP,CUTWORX USA,,Synthetic,0.6,STAKE-0002
+FirstName1,LastName1,FirstName1 LastName1,firstname1.lastname1@generalformulations.com,Purchasing VP,General Formulations,,Synthetic,0.8,STAKE-0003
+FirstName2,LastName2,FirstName2 LastName2,firstname2.lastname2@generalformulations.com,Chief Marketing Officer,General Formulations,,Synthetic,0.9,STAKE-0004
+FirstName3,LastName3,FirstName3 LastName3,firstname3.lastname3@generalformulations.com,Director of Technology,General Formulations,,Synthetic,0.9,STAKE-0005
+FirstName4,LastName4,FirstName4 LastName4,firstname4.lastname4@generalformulations.com,Account Manager,General Formulations,,Synthetic,0.6,STAKE-0006
+FirstName1,LastName1,FirstName1 LastName1,firstname1.lastname1@lagunatools.com,Client Relations Manager,Laguna Tools Inc.,,Synthetic,0.6,STAKE-0007
+FirstName2,LastName2,FirstName2 LastName2,firstname2.lastname2@lagunatools.com,Engineering Manager,Laguna Tools Inc.,,Synthetic,0.7,STAKE-0008
+FirstName1,LastName1,FirstName1 LastName1,firstname1.lastname1@lintecofamerica.com,Facility Manager,"Lintec of America, Inc.",,Synthetic,0.8,STAKE-0009
+FirstName2,LastName2,FirstName2 LastName2,firstname2.lastname2@lintecofamerica.com,VP of Sales,"Lintec of America, Inc.",,Synthetic,0.6,STAKE-0010
+FirstName3,LastName3,FirstName3 LastName3,firstname3.lastname3@lintecofamerica.com,Director of Marketing,"Lintec of America, Inc.",,Synthetic,0.9,STAKE-0011
+FirstName4,LastName4,FirstName4 LastName4,firstname4.lastname4@lintecofamerica.com,COO,"Lintec of America, Inc.",,Synthetic,0.9,STAKE-0012
+FirstName1,LastName1,FirstName1 LastName1,firstname1.lastname1@signagedetails.com,Director of Purchasing,Signage Details,,Synthetic,0.9,STAKE-0013
+FirstName2,LastName2,FirstName2 LastName2,firstname2.lastname2@signagedetails.com,Production Manager,Signage Details,,Synthetic,0.8,STAKE-0014
+FirstName3,LastName3,FirstName3 LastName3,firstname3.lastname3@signagedetails.com,Marketing VP,Signage Details,,Synthetic,0.7,STAKE-0015
+FirstName1,LastName1,FirstName1 LastName1,firstname1.lastname1@3acompositesusa.com,Technical Director,"3A Composites USA, Inc.",,Synthetic,0.9,STAKE-0016
+FirstName2,LastName2,FirstName2 LastName2,firstname2.lastname2@3acompositesusa.com,Purchasing Manager,"3A Composites USA, Inc.",,Synthetic,0.8,STAKE-0017
+FirstName3,LastName3,FirstName3 LastName3,firstname3.lastname3@3acompositesusa.com,Chief Financial Officer,"3A Composites USA, Inc.",,Synthetic,0.9,STAKE-0018
+FirstName4,LastName4,FirstName4 LastName4,firstname4.lastname4@3acompositesusa.com,Marketing VP,"3A Composites USA, Inc.",,Synthetic,0.7,STAKE-0019
+FirstName1,LastName1,FirstName1 LastName1,firstname1.lastname1@3m.com,VP of Marketing,3M Commercial Solutions,,Synthetic,0.7,STAKE-0020
+FirstName2,LastName2,FirstName2 LastName2,firstname2.lastname2@3m.com,Production Manager,3M Commercial Solutions,,Synthetic,0.8,STAKE-0021
+FirstName3,LastName3,FirstName3 LastName3,firstname3.lastname3@3m.com,Director of Technology,3M Commercial Solutions,,Synthetic,0.9,STAKE-0022
+FirstName1,LastName1,FirstName1 LastName1,firstname1.lastname1@arkramos.com,Client Relations Manager,A.R.K. Ramos Foundry & Mfg. Co.,,Synthetic,0.6,STAKE-0023
+FirstName2,LastName2,FirstName2 LastName2,firstname2.lastname2@arkramos.com,Operations VP,A.R.K. Ramos Foundry & Mfg. Co.,,Synthetic,0.8,STAKE-0024
+FirstName1,LastName1,FirstName1 LastName1,firstname1.lastname1@abitech.com,Sales VP,Abitech,,Synthetic,0.6,STAKE-0025
+FirstName2,LastName2,FirstName2 LastName2,firstname2.lastname2@abitech.com,Managing Director,Abitech,,Synthetic,0.9,STAKE-0026
+FirstName3,LastName3,FirstName3 LastName3,firstname3.lastname3@abitech.com,Director of Technology,Abitech,,Synthetic,0.9,STAKE-0027
+FirstName4,LastName4,FirstName4 LastName4,firstname4.lastname4@abitech.com,VP of Operations,Abitech,,Synthetic,0.8,STAKE-0028
+FirstName1,LastName1,FirstName1 LastName1,firstname1.lastname1@admaxdisplays.com,Purchasing VP,ADMAX Exhibit & Display Ltd.,,Synthetic,0.8,STAKE-0029
+FirstName2,LastName2,FirstName2 LastName2,firstname2.lastname2@admaxdisplays.com,Brand Manager,ADMAX Exhibit & Display Ltd.,,Synthetic,0.7,STAKE-0030
+FirstName1,LastName1,FirstName1 LastName1,firstname1.lastname1@aglaminators.com,Sales Manager,"Advanced Greig Laminators, Inc.",,Synthetic,0.6,STAKE-0031
+FirstName2,LastName2,FirstName2 LastName2,firstname2.lastname2@aglaminators.com,Technical Manager,"Advanced Greig Laminators, Inc.",,Synthetic,0.7,STAKE-0032
+FirstName1,LastName1,FirstName1 LastName1,firstname1.lastname1@advantageinnovations.com,Facility Manager,"Advantage Innovations, Inc",,Synthetic,0.8,STAKE-0033
+FirstName2,LastName2,FirstName2 LastName2,firstname2.lastname2@advantageinnovations.com,Marketing VP,"Advantage Innovations, Inc",,Synthetic,0.7,STAKE-0034
+FirstName1,LastName1,FirstName1 LastName1,firstname1.lastname1@aludecor.com,Brand Manager,Aludecor,,Synthetic,0.7,STAKE-0035
+FirstName2,LastName2,FirstName2 LastName2,firstname2.lastname2@aludecor.com,Facility Manager,Aludecor,,Synthetic,0.8,STAKE-0036
+FirstName3,LastName3,FirstName3 LastName3,firstname3.lastname3@aludecor.com,CEO,Aludecor,,Synthetic,0.9,STAKE-0037
+FirstName1,LastName1,FirstName1 LastName1,firstname1.lastname1@arlon.com,Project Manager,Arlon Graphics,,Synthetic,0.7,STAKE-0038
+FirstName2,LastName2,FirstName2 LastName2,firstname2.lastname2@arlon.com,Operations Manager,Arlon Graphics,,Synthetic,0.8,STAKE-0039
+FirstName3,LastName3,FirstName3 LastName3,firstname3.lastname3@arlon.com,VP of Marketing,Arlon Graphics,,Synthetic,0.7,STAKE-0040
+FirstName1,LastName1,FirstName1 LastName1,firstname1.lastname1@graphics.averydennison.com,Sales Manager,Avery Dennison Graphics Solutions,,Synthetic,0.6,STAKE-0041
+FirstName2,LastName2,FirstName2 LastName2,firstname2.lastname2@graphics.averydennison.com,Purchasing Manager,Avery Dennison Graphics Solutions,,Synthetic,0.8,STAKE-0042
+FirstName3,LastName3,FirstName3 LastName3,firstname3.lastname3@graphics.averydennison.com,Facility Manager,Avery Dennison Graphics Solutions,,Synthetic,0.8,STAKE-0043
+FirstName4,LastName4,FirstName4 LastName4,firstname4.lastname4@graphics.averydennison.com,Director of Technology,Avery Dennison Graphics Solutions,,Synthetic,0.9,STAKE-0044
