@@ -25,7 +25,7 @@ This project is an AI-powered sales lead generation system for DuPont Tedlar's G
 Run the main program:
 
 ```
-python run.py
+python run_pipeline.py
 ```
 
 This will:
