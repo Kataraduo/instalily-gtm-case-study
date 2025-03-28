@@ -60,17 +60,25 @@ def main():
     stakeholders_df.to_csv(output_dir / "stakeholders.csv", index=False)
     logger.info(f"Found {len(stakeholders_df)} stakeholders")
     
-    # Step 6: Generate outreach messages
-    logger.info("Step 6: Generating outreach messages")
+    # Step 6: Score leads
+    logger.info("Step 6: Scoring leads")
+    from src.lead_scoring.lead_scorer import LeadScorer
+    lead_scorer = LeadScorer()
+    scored_companies_df, scored_stakeholders_df, leads_df = lead_scorer.score_leads(enriched_companies_df, stakeholders_df)
+    leads_df.to_csv(output_dir / "scored_leads.csv", index=False)
+    logger.info(f"Scored {len(leads_df)} leads")
+    
+    # Step 7: Generate outreach messages
+    logger.info("Step 7: Generating outreach messages")
     message_generator = MessageGenerator()
-    stakeholders_with_messages_df = message_generator.generate_messages(stakeholders_df, enriched_companies_df)
+    stakeholders_with_messages_df = message_generator.generate_messages(scored_stakeholders_df, scored_companies_df)
     stakeholders_with_messages_df.to_csv(output_dir / "stakeholders_with_messages.csv", index=False)
     logger.info(f"Generated outreach messages for {len(stakeholders_with_messages_df)} stakeholders")
     
-    # Step 7: Generate dashboard
-    logger.info("Step 7: Generating dashboard")
+    # Step 8: Generate dashboard
+    logger.info("Step 8: Generating dashboard")
     dashboard_generator = DashboardGenerator()
-    dashboard_path = dashboard_generator.generate_dashboard(stakeholders_with_messages_df, enriched_companies_df)
+    dashboard_path = dashboard_generator.generate_dashboard(leads_df, scored_companies_df, scored_stakeholders_df)
     logger.info(f"Dashboard generated: {dashboard_path}")
     
     logger.info("Data processing and dashboard generation pipeline completed")

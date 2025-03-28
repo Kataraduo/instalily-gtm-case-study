@@ -6,7 +6,7 @@ import pandas as pd
 from pathlib import Path
 from src.data_enrichment.company_enricher import CompanyEnricher
 from src.data_enrichment.stakeholder_finder import StakeholderFinder
-from src.outreach_generation.message_generator import MessageGenerator
+from src.outreach.message_generator import MessageGenerator
 from src.visualization.dashboard_generator import DashboardGenerator
 from src.config.config import OUTPUT_DATA_DIR
 
@@ -40,17 +40,25 @@ def main():
     stakeholders_df.to_csv(output_dir / "stakeholders.csv", index=False)
     logger.info(f"已找到 {len(stakeholders_df)} 个利益相关者")
     
-    # 步骤3: 生成外联消息
-    logger.info("步骤3: 生成外联消息")
+    # 步骤3: 评分潜在客户
+    logger.info("步骤3: 评分潜在客户")
+    from src.lead_scoring.lead_scorer import LeadScorer
+    lead_scorer = LeadScorer()
+    scored_companies_df, scored_stakeholders_df, leads_df = lead_scorer.score_leads(enriched_companies_df, stakeholders_df)
+    leads_df.to_csv(output_dir / "scored_leads.csv", index=False)
+    logger.info(f"已评分 {len(leads_df)} 个潜在客户")
+    
+    # 步骤4: 生成外联消息
+    logger.info("步骤4: 生成外联消息")
     message_generator = MessageGenerator()
-    stakeholders_with_messages_df = message_generator.generate_messages(stakeholders_df, enriched_companies_df)
+    stakeholders_with_messages_df = message_generator.generate_messages(scored_stakeholders_df, scored_companies_df)
     stakeholders_with_messages_df.to_csv(output_dir / "stakeholders_with_messages.csv", index=False)
     logger.info(f"已为 {len(stakeholders_with_messages_df)} 个利益相关者生成外联消息")
     
-    # 步骤4: 生成仪表盘
-    logger.info("步骤4: 生成仪表盘")
+    # 步骤5: 生成仪表盘
+    logger.info("步骤5: 生成仪表盘")
     dashboard_generator = DashboardGenerator()
-    dashboard_path = dashboard_generator.generate_dashboard(stakeholders_with_messages_df, enriched_companies_df)
+    dashboard_path = dashboard_generator.generate_dashboard(leads_df, scored_companies_df, scored_stakeholders_df)
     logger.info(f"仪表盘已生成: {dashboard_path}")
     
     logger.info("仪表盘生成流程已完成")
