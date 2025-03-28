@@ -1,73 +1,48 @@
-"""
-Configuration file containing all parameters needed for the system
-"""
+"""Configuration settings for the DuPont Tedlar Sales Lead Generation System"""
 
 import os
 from pathlib import Path
 from dotenv import load_dotenv
 
-# 加载.env文件（只需要一次）
+# Load environment variables from .env file
 load_dotenv()
 
-# Project root directory
-ROOT_DIR = Path(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
-
-# Data directories
-DATA_DIR = ROOT_DIR / "data"
+# Project directories
+PROJECT_ROOT = Path(__file__).parent.parent.parent
+SRC_DIR = PROJECT_ROOT / "src"
+DATA_DIR = PROJECT_ROOT / "data"
 RAW_DATA_DIR = DATA_DIR / "raw"
 PROCESSED_DATA_DIR = DATA_DIR / "processed"
 OUTPUT_DATA_DIR = DATA_DIR / "output"
 
-# Ensure directories exist
-for dir_path in [RAW_DATA_DIR, PROCESSED_DATA_DIR, OUTPUT_DATA_DIR]:
-    dir_path.mkdir(parents=True, exist_ok=True)
+# Ensure all data directories exist
+for directory in [RAW_DATA_DIR, PROCESSED_DATA_DIR, OUTPUT_DATA_DIR]:
+    directory.mkdir(parents=True, exist_ok=True)
 
-# API configuration
-OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY", "")
-LINKEDIN_API_KEY = os.environ.get("LINKEDIN_API_KEY", "")
-CLAY_API_KEY = os.environ.get("CLAY_API_KEY", "")
+# API Keys and Configuration
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+CLEARBIT_API_KEY = os.getenv("CLEARBIT_API_KEY")
+HUNTER_API_KEY = os.getenv("HUNTER_API_KEY")
 
-# 打印API密钥的前10个字符，用于调试（实际使用时可以删除）
-if OPENAI_API_KEY:
-    print(f"OpenAI API密钥已加载，前10个字符: {OPENAI_API_KEY[:10]}...")
-else:
-    print("警告: OpenAI API密钥未设置")
-
-# 其余配置保持不变
-# Target company configuration
+# Industry-specific configuration
 TARGET_INDUSTRY = "Graphics & Signage"
 TARGET_PRODUCT = "DuPont Tedlar"
 
-# ICP (Ideal Customer Profile) criteria
-ICP_CRITERIA = {
-    "industry_keywords": [
-        "signage", "graphics", "large-format printing", "vehicle wraps", 
-        "architectural graphics", "protective films", "outdoor displays",
-        "digital printing", "visual communications"
-    ],
-    "company_size_min": 50,  # Minimum employee count
-    "annual_revenue_min": 5000000,  # Minimum annual revenue (USD)
-    "decision_maker_titles": [
-        "VP of Product Development", "Director of Innovation", 
-        "R&D Leader", "Chief Technology Officer", "Head of Product", 
-        "Director of Procurement", "Purchasing Manager", "Materials Manager"
-    ]
+# Web scraping configuration
+USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
+REQUEST_TIMEOUT = 30  # seconds
+REQUEST_DELAY = 2  # seconds between requests
+
+# Dashboard configuration
+DASHBOARD_TITLE = "DuPont Tedlar Sales Lead Dashboard"
+DASHBOARD_DESCRIPTION = "Interactive dashboard for DuPont Tedlar's Graphics & Signage sales team to prioritize and manage leads."
+
+# Scoring weights for lead prioritization
+SCORING_WEIGHTS = {
+    'company_size': 0.3,
+    'industry_relevance': 0.3,
+    'product_fit': 0.4,
+    'decision_making_power': 0.5,
+    'engagement_level': 0.3,
+    'communication_history': 0.2
 }
-
-# Relevant industry events and associations
-INDUSTRY_EVENTS = [
-    "ISA Sign Expo", "PRINTING United", "FESPA Global Print Expo",
-    "Graphics of the Americas", "SGIA Expo", "GlobalShop"
-]
-
-INDUSTRY_ASSOCIATIONS = [
-    "International Sign Association", "Specialty Graphic Imaging Association",
-    "Printing Industries of America", "FESPA", "Association for PRINT Technologies"
-]
-
-# Model configuration
-LLM_MODEL = "gpt-4"
-EMBEDDING_MODEL = "text-embedding-ada-002"
-
-# Lead scoring thresholds
-LEAD_SCORE_THRESHOLD = 70  # 0-100 score, leads above this score are considered high quality

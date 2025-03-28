@@ -1,7 +1,184 @@
-name,url,date,location,description,attendees,exhibitors
-ISA Sign Expo,https://www.isasignexpo.com,5/21/2024,"Atlanta, GA",ISA Sign Expo is a premier industry event for professionals in the graphics and signage industry.,3897,211
-PRINTING United,https://www.printingunited.com,2/17/2023,"Orlando, FL",PRINTING United is a premier industry event for professionals in the graphics and signage industry.,5380,170
-FESPA Global Print Expo,https://www.fespaglobalprintexpo.com,3/9/2024,"Orlando, FL",FESPA Global Print Expo is a premier industry event for professionals in the graphics and signage industry.,6365,51
-Graphics of the Americas,https://www.graphicsoftheamericas.com,3/28/2024,"Las Vegas, NV",Graphics of the Americas is a premier industry event for professionals in the graphics and signage industry.,2849,320
-SGIA Expo,https://www.sgiaexpo.com,12/14/2023,"Atlanta, GA",SGIA Expo is a premier industry event for professionals in the graphics and signage industry.,5052,285
-GlobalShop,https://www.globalshop.com,3/28/2024,"Las Vegas, NV",GlobalShop is a premier industry event for professionals in the graphics and signage industry.,7125,157
+name,date,location,url,description,source,relevance_score
+PRINTING United Expo,"October 18, 2026","Atlanta, GA",https://www.printingunited.com/,"Printing, graphics and signage industry expo",PRINTING United,0.5222222222222223
+European Sign Expo 2025,"May 15, 2026","Munich, Germany",https://www.fespa.com/en/events,"Global print expo for screen, digital and textile printing",FESPA Global Print Expo,0.4111111111111111
+ISA Sign Expo,"April 1, 2026","Las Vegas, NV",https://www.signexpo.org/,International Sign Association Expo,ISA Sign Expo,0.25555555555555554
+European Sign Expo 2025,"June 1, 2026",United States,https://www.fespa.com/en/events,FESPA industry event,FESPA,0.25555555555555554
+Printing Industries of America,"Apr.
+03",United States,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+Printing Industries of America,"Apr.
+03",United States,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+Printing Industries of America,"Apr.
+16",United States,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+Printing Industries of America,"Apr.
+16",United States,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+Printing Industries of America,"Apr.
+21",United States,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+Printing Industries of America,"Apr.
+21",United States,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+New Member Orientation,"Apr. 03, 2025 • 2:00 PM - 3:00 PM EST",Online,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+Printing Industries of America,"Apr. 03, 2025 • 2:00 PM - 3:00 PM EST",Online,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+Decoding Sustainability Regulations: What Printers Need to Know,"Apr. 16, 2025 • 2:00 PM - 3:00 PM EST",Online,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+Printing Industries of America,"Apr. 16, 2025 • 2:00 PM - 3:00 PM EST",Online,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+G7+ Expert Certification April 21-25 Live Online,"Apr. 21, 2025 - Apr. 25, 2025 • 1:00 PM - 5:00 PM EST",Online,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+Printing Industries of America,"Apr. 21, 2025 - Apr. 25, 2025 • 1:00 PM - 5:00 PM EST",Online,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+Printing Industries of America,"Aug.
+27",United States,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+Printing Industries of America,"Aug.
+27",United States,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+Printing Industries of America,"Aug.
+29",United States,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+Printing Industries of America,"Aug.
+29",United States,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+"PDAA Windows, Walls, and Floors Chicago IL Aug 2025","Aug. 27, 2025 - Aug. 28, 2025 • 8:00 AM - 5:00 PM CST",In-Person,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+Printing Industries of America,"Aug. 27, 2025 - Aug. 28, 2025 • 8:00 AM - 5:00 PM CST",In-Person,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+PDAA Vehicle and Fleet Training and Certification Aug 2025,"Aug. 29, 2025 - Aug. 31, 2025 • 8:00 AM - 5:00 PM CST",In-Person,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+Printing Industries of America,"Aug. 29, 2025 - Aug. 31, 2025 • 8:00 AM - 5:00 PM CST",In-Person,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+Printing Industries of America,"Jun.
+24",United States,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+Printing Industries of America,"Jun.
+24",United States,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+"G7+ Expert Certification June 24-26 in Minneapolis, MN","Jun. 24, 2025 - Jun. 26, 2025 • 9:00 AM - 4:00 PM CST",In-Person,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+Printing Industries of America,"Jun. 24, 2025 - Jun. 26, 2025 • 9:00 AM - 4:00 PM CST",In-Person,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+Printing Industries of America,"June 1, 2026",United States,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+Printing Industries of America,"June 1, 2026",United States,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+Printing Industries of America,"June 1, 2026",United States,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+Printing Industries of America,"June 1, 2026",United States,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+Printing Industries of America,"June 1, 2026",United States,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+Printing Industries of America,"June 1, 2026",United States,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+Printing Industries of America,"June 1, 2026",United States,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+Printing Industries of America,"June 1, 2026",United States,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+Printing Industries of America,"June 1, 2026",United States,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+Printing Industries of America,"June 1, 2026",United States,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+Printing Industries of America,"June 1, 2026",United States,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+Printing Industries of America,"June 1, 2026",United States,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+Printing Industries of America,"June 1, 2026",United States,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+Printing Industries of America,"June 1, 2026",United States,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+Printing Industries of America,"June 1, 2026",United States,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+Printing Industries of America,"June 1, 2026",United States,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+Printing Industries of America,"June 1, 2026",United States,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+Printing Industries of America,"June 1, 2026",United States,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+Printing Industries of America,"June 1, 2026",United States,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+Printing Industries of America,"June 1, 2026",United States,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+Printing Industries of America,"June 1, 2026",United States,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+Printing Industries of America,"June 1, 2026",United States,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+Printing Industries of America,"June 1, 2026",United States,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+Printing Industries of America,"June 1, 2026",United States,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+Printing Industries of America,"June 1, 2026",United States,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+Printing Industries of America,"June 1, 2026",United States,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+Printing Industries of America,"June 1, 2026",United States,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+Printing Industries of America,"June 1, 2026",United States,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+Printing Industries of America,"June 1, 2026",United States,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+Printing Industries of America,"June 1, 2026",United States,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+Printing Industries of America,"June 1, 2026",United States,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+Printing Industries of America,"June 1, 2026",United States,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+Printing Industries of America,"June 1, 2026",United States,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+Printing Industries of America,"June 1, 2026",United States,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+Printing Industries of America,"June 1, 2026",United States,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+Printing Industries of America,"June 1, 2026",United States,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+Printing Industries of America,"June 1, 2026",United States,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+Printing Industries of America,"June 1, 2026",United States,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+Printing Industries of America,"June 1, 2026",United States,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+Printing Industries of America,"June 1, 2026",United States,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+Printing Industries of America,"June 1, 2026",United States,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+Printing Industries of America,"June 1, 2026",United States,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+Printing Industries of America,"June 1, 2026",United States,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+Printing Industries of America,"June 1, 2026",United States,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+Printing Industries of America,"June 1, 2026",United States,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+Printing Industries of America,"June 1, 2026",United States,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+Printing Industries of America,"June 1, 2026",United States,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+Printing Industries of America,"June 1, 2026",United States,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+Printing Industries of America,"June 1, 2026",United States,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+Printing Industries of America,"June 1, 2026",United States,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+Printing Industries of America,"June 1, 2026",United States,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+Printing Industries of America,"June 1, 2026",United States,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+Printing Industries of America,"June 1, 2026",United States,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+Printing Industries of America,"June 1, 2026",United States,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+Printing Industries of America,"June 1, 2026",United States,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+Printing Industries of America,"June 1, 2026",United States,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+Printing Industries of America,"June 1, 2026",United States,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+Printing Industries of America,"June 1, 2026",United States,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+Printing Industries of America,"June 1, 2026",United States,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+Printing Industries of America,"June 1, 2026",United States,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+Printing Industries of America,"June 1, 2026",United States,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+Printing Industries of America,"June 1, 2026",United States,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+Printing Industries of America,"June 1, 2026",United States,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+Printing Industries of America,"June 1, 2026",United States,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+Printing Industries of America,"June 1, 2026",United States,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+Printing Industries of America,"June 1, 2026",United States,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+Printing Industries of America,"June 1, 2026",United States,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+Printing Industries of America,"June 1, 2026",United States,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+Printing Industries of America,"June 1, 2026",United States,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+Printing Industries of America,"June 1, 2026",United States,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+Printing Industries of America,"June 1, 2026",United States,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+Printing Industries of America,"June 1, 2026",United States,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+Printing Industries of America,"Mar.
+24",United States,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+Printing Industries of America,"Mar.
+24",United States,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+Printing Industries of America,"Mar.
+29",United States,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+Printing Industries of America,"Mar.
+29",United States,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+G7+ Expert Certification March 24-28 Live Online,"Mar. 24, 2025 - Mar. 28, 2025 • 1:00 PM - 5:00 PM EST",Online,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+Printing Industries of America,"Mar. 24, 2025 - Mar. 28, 2025 • 1:00 PM - 5:00 PM EST",Online,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+"PDAA Windows, Walls, and Floors March MD","Mar. 29, 2025 - Mar. 30, 2025 • 8:00 AM - 5:00 PM EST",In-Person,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+Printing Industries of America,"Mar. 29, 2025 - Mar. 30, 2025 • 8:00 AM - 5:00 PM EST",In-Person,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+FESPA Global Print Expo 2025,"May 15, 2026","Munich, Germany",https://www.fespa.com/en/events,"Global print expo for screen, digital and textile printing",FESPA Global Print Expo,0.15555555555555556
+FESPA Global Print Expo 2025,"May 15, 2026","Munich, Germany",https://www.fespa.com/en/events,"Global print expo for screen, digital and textile printing",FESPA Global Print Expo,0.15555555555555556
+Personalisation Experience 2025,"May 15, 2026","Munich, Germany",https://www.fespa.com/en/events,"Global print expo for screen, digital and textile printing",FESPA Global Print Expo,0.15555555555555556
+FESPA Awards 2025,"May 15, 2026","Munich, Germany",https://www.fespa.com/en/events,"Global print expo for screen, digital and textile printing",FESPA Global Print Expo,0.15555555555555556
+FESPA Africa 2025,"May 15, 2026","Munich, Germany",https://www.fespa.com/en/events,"Global print expo for screen, digital and textile printing",FESPA Global Print Expo,0.15555555555555556
+FESPA Mexico 2025,"May 15, 2026","Munich, Germany",https://www.fespa.com/en/events,"Global print expo for screen, digital and textile printing",FESPA Global Print Expo,0.15555555555555556
+Printing Industries of America,"May.
+06",United States,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+Printing Industries of America,"May.
+06",United States,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+Printing Industries of America,"May.
+08",United States,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+Printing Industries of America,"May.
+08",United States,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+Printing Industries of America,"May.
+19",United States,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+Printing Industries of America,"May.
+19",United States,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+Printing Industries of America,"May.
+21",United States,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+Printing Industries of America,"May.
+21",United States,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+"G7+ Expert Certification May 6-8 - Bogota, Colombia","May. 06, 2025 - May. 08, 2025 • 9:00 AM - 5:00 PM SPST",Online,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+Printing Industries of America,"May. 06, 2025 - May. 08, 2025 • 9:00 AM - 5:00 PM SPST",Online,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+"PDAA Windows, Walls, and Floors Chicago IL May 2025","May. 08, 2025 - May. 09, 2025 • 8:00 AM - 5:00 PM CST",In-Person,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+Printing Industries of America,"May. 08, 2025 - May. 09, 2025 • 8:00 AM - 5:00 PM CST",In-Person,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+G7+ Expert Certification May 19-23 Live Online,"May. 19, 2025 - May. 23, 2025 • 9:00 AM - 1:00 PM EST",Online,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+Printing Industries of America,"May. 19, 2025 - May. 23, 2025 • 9:00 AM - 1:00 PM EST",Online,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+Certifications in Print: Game Changer or Just a Piece of Paper?,"May. 21, 2025 • 2:00 PM - 3:00 PM EST",Online,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+Printing Industries of America,"May. 21, 2025 • 2:00 PM - 3:00 PM EST",Online,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+Printing Industries of America,"Nov.
+15",United States,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+Printing Industries of America,"Nov.
+15",United States,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+"PDAA Windows, Walls, and Floors MD Nov 2025","Nov. 15, 2025 - Nov. 16, 2025 • 8:00 AM - 5:00 PM EST",In-Person,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+Printing Industries of America,"Nov. 15, 2025 - Nov. 16, 2025 • 8:00 AM - 5:00 PM EST",In-Person,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+Printing Industries of America,"Oct.
+22",United States,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+Printing Industries of America,"Oct.
+22",United States,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+PRINTING United Expo,"Oct. 22, 2025 - Oct. 24, 2025",In-Person,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+Printing Industries of America,"Oct. 22, 2025 - Oct. 24, 2025",In-Person,https://www.printing.org/events,Printing Industries of America industry event,Printing Industries of America,0.15555555555555556
+FESPA Global Print Expo 2025,"June 1, 2026",United States,https://www.fespa.com/en/events,FESPA industry event,FESPA,0.1
+FESPA Global Print Expo 2025,"June 1, 2026",United States,https://www.fespa.com/en/events,FESPA industry event,FESPA,0.1
+FESPA Global Print Expo 2025,"June 1, 2026",United States,https://www.fespa.com/en/events,FESPA industry event,FESPA,0.1
+What to Expect from OSHA Under the Second Trump Administration,"June 1, 2026",United States,https://www.signs.org/events,International Sign Association industry event,International Sign Association,0.05555555555555555
+Utah Sign Association Annual Meeting,"June 1, 2026",United States,https://www.signs.org/events,International Sign Association industry event,International Sign Association,0.05555555555555555
+Utah Sign Association Golf Tournament,"June 1, 2026",United States,https://www.signs.org/events,International Sign Association industry event,International Sign Association,0.05555555555555555
+Northwest Sign Council Holiday Mixer & Tabletop Event,"June 1, 2026",United States,https://www.signs.org/events,International Sign Association industry event,International Sign Association,0.05555555555555555
+What to Expect from OSHA Under the Second Trump Administration,"June 1, 2026",United States,https://www.signs.org/events,International Sign Association industry event,International Sign Association,0.05555555555555555
+Utah Sign Association Annual Meeting,"June 1, 2026",United States,https://www.signs.org/events,International Sign Association industry event,International Sign Association,0.05555555555555555
+Utah Sign Association Golf Tournament,"June 1, 2026",United States,https://www.signs.org/events,International Sign Association industry event,International Sign Association,0.05555555555555555
+Northwest Sign Council Holiday Mixer & Tabletop Event,"June 1, 2026",United States,https://www.signs.org/events,International Sign Association industry event,International Sign Association,0.05555555555555555
+FESPA,"June 1, 2026",United States,https://www.fespa.com/en/events,FESPA industry event,FESPA,0.0
+FESPA,"June 1, 2026",United States,https://www.fespa.com/en/events,FESPA industry event,FESPA,0.0
+Personalisation Experience 2025,"June 1, 2026",United States,https://www.fespa.com/en/events,FESPA industry event,FESPA,0.0
+FESPA Awards 2025,"June 1, 2026",United States,https://www.fespa.com/en/events,FESPA industry event,FESPA,0.0
+FESPA Africa 2025,"June 1, 2026",United States,https://www.fespa.com/en/events,FESPA industry event,FESPA,0.0
+FESPA Mexico 2025,"June 1, 2026",United States,https://www.fespa.com/en/events,FESPA industry event,FESPA,0.0

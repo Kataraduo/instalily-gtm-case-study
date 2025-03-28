@@ -1,6 +1,11 @@
-name,url,description,members,founded,headquarters
-International Sign Association,https://www.internationalsignassociation.org,International Sign Association is a leading industry association for professionals in the graphics and signage industry.,2882,1952,"Los Angeles, CA"
-Specialty Graphic Imaging Association,https://www.specialtygraphicimagingassociation.org,Specialty Graphic Imaging Association is a leading industry association for professionals in the graphics and signage industry.,2409,1968,"New York, NY"
-Printing Industries of America,https://www.printingindustriesofamerica.org,Printing Industries of America is a leading industry association for professionals in the graphics and signage industry.,3748,1976,"Washington, DC"
-FESPA,https://www.fespa.org,FESPA is a leading industry association for professionals in the graphics and signage industry.,2119,1959,"Washington, DC"
-Association for PRINT Technologies,https://www.associationforprinttechnologies.org,Association for PRINT Technologies is a leading industry association for professionals in the graphics and signage industry.,4502,1999,"New York, NY"
+name,url,description,relevance_score
+International Sign Association (ISA),https://www.signs.org/,Trade association for sign industry professionals,0.95
+Specialty Graphic Imaging Association (SGIA),https://www.sgia.org/,"Association for printing, graphics and visual communications",0.9
+PRINTING United Alliance,https://www.printingunited.com/,Leading printing and graphic arts trade organization,0.85
+Graphic Arts Association,https://www.graphicartsassociation.org/,Regional trade association for the printing and graphic communications industry,0.8
+Society for Experiential Graphic Design (SEGD),https://segd.org/,Multidisciplinary community creating experiences that connect people to place,0.85
+Association for PRINT Technologies,https://www.printtechnologies.org/,Organization dedicated to supporting the entire commercial printing value chain,0.75
+Flexographic Technical Association (FTA),https://www.flexography.org/,Professional society dedicated to promoting and advancing the flexographic printing industry,0.7
+American Advertising Federation (AAF),https://www.aaf.org/,Advertising trade organization that includes members across all disciplines,0.65
+United States Sign Council (USSC),https://www.ussc.org/,Organization dedicated to serving the on-premise sign industry,0.9
+National Association of Sign Supply Distributors (NASSD),https://www.nassd.org/,Organization for sign supply distributors,0.85

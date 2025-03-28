@@ -1,252 +1,484 @@
+"""Dashboard Generator Module for DuPont Tedlar Sales Lead Generation System
+
+This module is responsible for generating an interactive dashboard to visualize
+lead scoring results and provide insights for the sales team.
 """
-Dashboard generation module for visualizing outreach data
-"""
-import pandas as pd
-import matplotlib.pyplot as plt
-import seaborn as sns
+
 import os
 import logging
+import pandas as pd
+import numpy as np
+import plotly.express as px
+import plotly.graph_objects as go
+from plotly.subplots import make_subplots
 from pathlib import Path
-from typing import Dict, Any, List
-from ..config.config import OUTPUT_DATA_DIR
+import sys
+import json
 
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
-logger = logging.getLogger(__name__)
+# Add project root to path
+project_root = Path(__file__).parent.parent.parent
+sys.path.append(str(project_root))
+
+from src.config.config import (
+    OUTPUT_DATA_DIR,
+    DASHBOARD_TITLE,
+    DASHBOARD_DESCRIPTION
+)
+
 
 class DashboardGenerator:
-    """Dashboard generation class for outreach data visualization"""
+    """Class for generating interactive dashboards to visualize lead scoring results"""
     
-    def __init__(self, output_dir: Path = None):
-        """
-        Initialize dashboard generator
+    def __init__(self):
+        """Initialize the DashboardGenerator with default settings"""
+        # Ensure output directories exist
+        self.output_dir = OUTPUT_DATA_DIR
+        self.dashboard_dir = self.output_dir / 'dashboard'
+        self.dashboard_dir.mkdir(parents=True, exist_ok=True)
+        
+        # Setup logging
+        logging.basicConfig(level=logging.INFO, 
+                           format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+        self.logger = logging.getLogger(__name__)
+        
+        # Dashboard settings
+        self.title = DASHBOARD_TITLE
+        self.description = DASHBOARD_DESCRIPTION
+        self.color_scale = px.colors.sequential.Viridis
+    
+    def generate_dashboard(self, leads_df, companies_df=None, stakeholders_df=None):
+        """Generate an interactive dashboard to visualize lead scoring results
         
         Args:
-            output_dir: Directory to save dashboard files, defaults to OUTPUT_DATA_DIR
-        """
-        self.output_dir = output_dir or OUTPUT_DATA_DIR
-        # Ensure output directory exists
-        os.makedirs(self.output_dir, exist_ok=True)
-        # Set visualization style
-        sns.set_style("whitegrid")
-        plt.rcParams.update({'font.size': 12})
-    
-    def generate_dashboard(self, stakeholders_df: pd.DataFrame, companies_df: pd.DataFrame) -> str:
-        """
-        Generate dashboard for outreach data
-        
-        Args:
-            stakeholders_df: Stakeholders DataFrame with outreach messages
-            companies_df: Companies DataFrame
+            leads_df (pandas.DataFrame): DataFrame containing lead information
+            companies_df (pandas.DataFrame, optional): DataFrame containing company information
+            stakeholders_df (pandas.DataFrame, optional): DataFrame containing stakeholder information
             
         Returns:
-            Path to generated dashboard HTML file
+            str: Path to the generated dashboard HTML file
         """
-        logger.info("Generating outreach dashboard")
-        
-        # Create output directory
-        dashboard_dir = self.output_dir / "dashboard"
-        os.makedirs(dashboard_dir, exist_ok=True)
-        
-        # Generate various charts
-        self._generate_company_distribution(companies_df, dashboard_dir)
-        self._generate_stakeholder_analysis(stakeholders_df, dashboard_dir)
-        self._generate_message_stats(stakeholders_df, dashboard_dir)
-        
-        # Create HTML dashboard
-        dashboard_path = self._create_html_dashboard(stakeholders_df, companies_df, dashboard_dir)
-        
-        logger.info(f"Dashboard generated at: {dashboard_path}")
-        return dashboard_path
-    
-    def _generate_company_distribution(self, companies_df: pd.DataFrame, output_dir: Path) -> None:
-        """Generate company distribution charts"""
-        plt.figure(figsize=(10, 6))
-        
-        # Industry distribution
-        if 'industry' in companies_df.columns:
-            industry_counts = companies_df['industry'].value_counts()
-            plt.subplot(1, 2, 1)
-            industry_counts.plot(kind='bar')
-            plt.title('Company Industry Distribution')
-            plt.xlabel('Industry')
-            plt.ylabel('Number of Companies')
-            plt.xticks(rotation=45)
-        
-        # Company size distribution
-        if 'company_size' in companies_df.columns:
-            plt.subplot(1, 2, 2)
-            companies_df['company_size'].hist(bins=10)
-            plt.title('Company Size Distribution')
-            plt.xlabel('Number of Employees')
-            plt.ylabel('Number of Companies')
-        
-        plt.tight_layout()
-        plt.savefig(output_dir / "company_distribution.png")
-        plt.close()
-    
-    def _generate_stakeholder_analysis(self, stakeholders_df: pd.DataFrame, output_dir: Path) -> None:
-        """Generate stakeholder analysis charts"""
-        plt.figure(figsize=(10, 6))
-        
-        # Title distribution
-        if 'title' in stakeholders_df.columns:
-            title_counts = stakeholders_df['title'].value_counts().head(10)
-            plt.subplot(1, 2, 1)
-            title_counts.plot(kind='bar')
-            plt.title('Stakeholder Title Distribution (Top 10)')
-            plt.xlabel('Title')
-            plt.ylabel('Count')
-            plt.xticks(rotation=45)
-        
-        # Decision making power distribution
-        if 'decision_making_power' in stakeholders_df.columns:
-            plt.subplot(1, 2, 2)
-            decision_counts = stakeholders_df['decision_making_power'].value_counts()
-            decision_counts.plot(kind='pie', autopct='%1.1f%%')
-            plt.title('Decision Making Power Distribution')
-            plt.ylabel('')
-        
-        plt.tight_layout()
-        plt.savefig(output_dir / "stakeholder_analysis.png")
-        plt.close()
-    
-    def _generate_message_stats(self, stakeholders_df: pd.DataFrame, output_dir: Path) -> None:
-        """Generate message statistics charts"""
-        if 'outreach_message' not in stakeholders_df.columns:
-            return
-        
-        plt.figure(figsize=(10, 6))
-        
-        # Calculate message length
-        stakeholders_df['message_length'] = stakeholders_df['outreach_message'].apply(len)
-        
-        # Message length distribution
-        plt.subplot(1, 2, 1)
-        stakeholders_df['message_length'].hist(bins=10)
-        plt.title('Message Length Distribution')
-        plt.xlabel('Character Count')
-        plt.ylabel('Number of Messages')
-        
-        # Number of messages per company
-        plt.subplot(1, 2, 2)
-        company_message_counts = stakeholders_df.groupby('company').size()
-        company_message_counts.plot(kind='bar')
-        plt.title('Number of Outreach Messages per Company')
-        plt.xlabel('Company')
-        plt.ylabel('Number of Messages')
-        plt.xticks(rotation=45)
-        
-        plt.tight_layout()
-        plt.savefig(output_dir / "message_stats.png")
-        plt.close()
-    
-    def _create_html_dashboard(self, stakeholders_df: pd.DataFrame, companies_df: pd.DataFrame, output_dir: Path) -> str:
-        """Create HTML dashboard"""
-        dashboard_path = output_dir / "outreach_dashboard.html"
-        
-        # Calculate some statistics
-        total_companies = len(companies_df)
-        total_stakeholders = len(stakeholders_df)
-        messages_generated = stakeholders_df['outreach_message'].notna().sum()
+        self.logger.info("Generating interactive dashboard")
         
         # Create HTML content
+        html_content = self._create_dashboard_html(leads_df, companies_df, stakeholders_df)
+        
+        # Save dashboard HTML file
+        dashboard_path = self.output_dir / 'dashboard.html'
+        with open(dashboard_path, 'w', encoding='utf-8') as f:
+            f.write(html_content)
+        
+        self.logger.info(f"Dashboard saved to {dashboard_path}")
+        
+        return str(dashboard_path)
+    
+    def _create_dashboard_html(self, leads_df, companies_df=None, stakeholders_df=None):
+        """Create HTML content for the dashboard
+        
+        Args:
+            leads_df (pandas.DataFrame): DataFrame containing lead information
+            companies_df (pandas.DataFrame, optional): DataFrame containing company information
+            stakeholders_df (pandas.DataFrame, optional): DataFrame containing stakeholder information
+            
+        Returns:
+            str: HTML content for the dashboard
+        """
+        # Create dashboard components
+        lead_table = self._create_lead_table(leads_df)
+        lead_charts = self._create_lead_charts(leads_df)
+        company_charts = self._create_company_charts(companies_df if companies_df is not None else leads_df)
+        stakeholder_charts = self._create_stakeholder_charts(stakeholders_df if stakeholders_df is not None else leads_df)
+        
+        # Combine components into a complete HTML document
         html_content = f"""
         <!DOCTYPE html>
-        <html>
+        <html lang="en">
         <head>
-            <title>Outreach Campaign Dashboard</title>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>{self.title}</title>
+            <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+            <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+            <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
             <style>
-                body {{ font-family: Arial, sans-serif; margin: 0; padding: 20px; }}
-                .dashboard {{ max-width: 1200px; margin: 0 auto; }}
-                .header {{ background-color: #f8f9fa; padding: 20px; border-radius: 5px; margin-bottom: 20px; }}
-                .stats-container {{ display: flex; justify-content: space-between; margin-bottom: 20px; }}
-                .stat-box {{ background-color: #ffffff; border: 1px solid #dee2e6; border-radius: 5px; padding: 15px; width: 30%; }}
-                .chart-container {{ margin-bottom: 30px; }}
-                h1, h2 {{ color: #343a40; }}
-                table {{ width: 100%; border-collapse: collapse; margin-top: 20px; }}
-                th, td {{ border: 1px solid #dee2e6; padding: 8px; text-align: left; }}
-                th {{ background-color: #f8f9fa; }}
-                tr:nth-child(even) {{ background-color: #f8f9fa; }}
+                body {{font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f5f5f5;}}
+                .container {{max-width: 1200px; margin: 0 auto; padding: 20px;}}
+                .header {{background-color: #1a237e; color: white; padding: 20px; text-align: center; margin-bottom: 20px;}}
+                .dashboard-section {{background-color: white; padding: 20px; margin-bottom: 20px; border-radius: 5px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);}}
+                .chart-container {{width: 100%; height: 400px; margin-bottom: 20px;}}
+                .chart-row {{display: flex; flex-wrap: wrap; justify-content: space-between;}}
+                .chart-half {{width: 48%; margin-bottom: 20px;}}
+                h1, h2, h3 {{color: #1a237e;}}
+                .tier-1 {{background-color: #c8e6c9; color: #2e7d32;}}
+                .tier-2 {{background-color: #fff9c4; color: #f9a825;}}
+                .tier-3 {{background-color: #ffcdd2; color: #c62828;}}
+                .dataTables_wrapper {{margin-bottom: 30px;}}
+                table.dataTable thead th {{background-color: #e8eaf6; color: #1a237e;}}
+                @media (max-width: 768px) {{.chart-half {{width: 100%;}}}}
+                
+                /* Styles for expandable cells */
+                .expandable-cell {{position: relative;}}
+                .preview-text {{color: #555;}}
+                .expand-btn {{cursor: pointer; color: #1a237e; text-decoration: underline; margin-top: 5px; font-size: 0.9em;}}
+                .full-text {{margin-top: 5px; padding: 10px; background-color: #f9f9f9; border-radius: 4px; border-left: 3px solid #1a237e;}}
+                
+                /* Qualification details styling */
+                .qualification-section {{margin-bottom: 8px;}}
+                .qualification-section h4 {{margin: 5px 0; color: #1a237e; font-size: 0.9em;}}
+                .qualification-section p {{margin: 3px 0; font-size: 0.9em;}}
+                
+                /* Outreach message styling */
+                .outreach-message {{font-style: italic; color: #333;}}
+                .decision-maker-info {{margin-bottom: 8px; font-weight: bold;}}
             </style>
         </head>
         <body>
-            <div class="dashboard">
-                <div class="header">
-                    <h1>Outreach Campaign Dashboard</h1>
-                    <p>Generated on: {pd.Timestamp.now().strftime('%Y-%m-%d %H:%M:%S')}</p>
+            <div class="header">
+                <h1>{self.title}</h1>
+                <p>{self.description}</p>
+            </div>
+            
+            <div class="container">
+                <div class="dashboard-section">
+                    <h2>Lead Prioritization</h2>
+                    <p>Below are the prioritized leads for DuPont Tedlar's Graphics & Signage team, ranked by lead score.</p>
+                    {lead_table}
                 </div>
                 
-                <div class="stats-container">
-                    <div class="stat-box">
-                        <h3>Target Companies</h3>
-                        <h2>{total_companies}</h2>
-                    </div>
-                    <div class="stat-box">
-                        <h3>Stakeholders</h3>
-                        <h2>{total_stakeholders}</h2>
-                    </div>
-                    <div class="stat-box">
-                        <h3>Messages Generated</h3>
-                        <h2>{messages_generated}</h2>
+                <div class="dashboard-section">
+                    <h2>Lead Overview</h2>
+                    <div class="chart-row">
+                        {lead_charts}
                     </div>
                 </div>
                 
-                <div class="chart-container">
-                    <h2>Company Analysis</h2>
-                    <img src="company_distribution.png" alt="Company Distribution" style="width: 100%;">
+                <div class="dashboard-section">
+                    <h2>Company Insights</h2>
+                    <div class="chart-row">
+                        {company_charts}
+                    </div>
                 </div>
                 
-                <div class="chart-container">
+                <div class="dashboard-section">
                     <h2>Stakeholder Analysis</h2>
-                    <img src="stakeholder_analysis.png" alt="Stakeholder Analysis" style="width: 100%;">
-                </div>
-                
-                <div class="chart-container">
-                    <h2>Message Statistics</h2>
-                    <img src="message_stats.png" alt="Message Statistics" style="width: 100%;">
-                </div>
-                
-                <div class="chart-container">
-                    <h2>Stakeholder List</h2>
-                    <table>
-                        <tr>
-                            <th>Name</th>
-                            <th>Title</th>
-                            <th>Company</th>
-                            <th>Decision Making Power</th>
-                        </tr>
-        """
-        
-        # Add stakeholder data
-        for _, row in stakeholders_df.head(10).iterrows():
-            html_content += f"""
-                        <tr>
-                            <td>{row.get('name', '')}</td>
-                            <td>{row.get('title', '')}</td>
-                            <td>{row.get('company', '')}</td>
-                            <td>{row.get('decision_making_power', '')}</td>
-                        </tr>
-            """
-        
-        # If there are more than 10 stakeholders, add a note
-        if len(stakeholders_df) > 10:
-            html_content += f"""
-                        <tr>
-                            <td colspan="4">... and {len(stakeholders_df) - 10} more stakeholders</td>
-                        </tr>
-            """
-        
-        # Complete HTML
-        html_content += """
-                    </table>
+                    <div class="chart-row">
+                        {stakeholder_charts}
+                    </div>
                 </div>
             </div>
+            
+            <script>
+                $(document).ready(function() {{                    
+                    $('#leads-table').DataTable({{                        
+                        pageLength: 10,
+                        order: [[2, 'desc']],
+                        columnDefs: [
+                            {{targets: 3, render: function(data, type, row) {{
+                                if (data === 'Tier 1') return '<span class="tier-1">Tier 1</span>';
+                                if (data === 'Tier 2') return '<span class="tier-2">Tier 2</span>';
+                                if (data === 'Tier 3') return '<span class="tier-3">Tier 3</span>';
+                                return data;
+                            }}}}
+                        ]
+                    }});
+                    
+                    // Add event listeners for expandable cells
+                    $(document).on('click', '.expand-btn', function() {{
+                        var fullText = $(this).siblings('.full-text');
+                        var previewText = $(this).siblings('.preview-text');
+                        
+                        if (fullText.is(':visible')) {{
+                            fullText.hide();
+                            previewText.show();
+                            $(this).text('Show More');
+                        }} else {{
+                            fullText.show();
+                            previewText.hide();
+                            $(this).text('Show Less');
+                        }}
+                    }});
+                }});
+            </script>
         </body>
         </html>
         """
         
-        # Write HTML file
-        with open(dashboard_path, 'w') as f:
-            f.write(html_content)
+        return html_content
+    
+    def _create_lead_table(self, leads_df):
+        """Create an HTML table for leads
         
-        return str(dashboard_path)
+        Args:
+            leads_df (pandas.DataFrame): DataFrame containing lead information
+            
+        Returns:
+            str: HTML table for leads
+        """
+        # Select and rename columns for the table
+        table_columns = {
+            'name': 'Stakeholder',
+            'title': 'Title',
+            'lead_score': 'Lead Score',
+            'tier': 'Tier',
+            'company': 'Company',
+            'industry': 'Industry',
+            'company_size': 'Company Size',
+            'email': 'Email',
+            'qualification_rationale': 'Qualification Rationale',
+            'personalized_outreach': 'Personalized Outreach'
+        }
+        
+        # Filter columns that exist in the DataFrame
+        existing_columns = [col for col in table_columns.keys() if col in leads_df.columns]
+        
+        # Create a copy with only the selected columns
+        table_df = leads_df[existing_columns].copy()
+        
+        # Rename columns
+        table_df.columns = [table_columns[col] for col in existing_columns]
+        
+        # Convert DataFrame to HTML table
+        html_table = f"""
+        <table id="leads-table" class="display" style="width:100%">
+            <thead>
+                <tr>
+                    {' '.join(f'<th>{col}</th>' for col in table_df.columns)}
+                </tr>
+            </thead>
+            <tbody>
+                {self._df_to_table_rows(table_df)}
+            </tbody>
+        </table>
+        """
+        
+        return html_table
+    
+    def _df_to_table_rows(self, df):
+        """Convert DataFrame to HTML table rows with expandable details for qualification rationale and outreach
+        
+        Args:
+            df (pandas.DataFrame): DataFrame to convert
+            
+        Returns:
+            str: HTML table rows
+        """
+        rows = []
+        for _, row in df.iterrows():
+            cells = []
+            
+            for i, value in enumerate(row.values):
+                col_name = df.columns[i]
+                
+                # Handle qualification rationale and personalized outreach with expandable sections
+                if col_name in ['Qualification Rationale', 'Personalized Outreach'] and value:
+                    # Create expandable content for longer text
+                    cells.append(f'''
+                    <td>
+                        <div class="expandable-cell">
+                            <div class="preview-text">{str(value)[:50]}...</div>
+                            <div class="expand-btn">Show More</div>
+                            <div class="full-text" style="display:none">{value}</div>
+                        </div>
+                    </td>
+                    ''')
+                else:
+                    cells.append(f'<td>{value}</td>')
+                    
+            rows.append(f'<tr>{"".join(cells)}</tr>')
+        
+        return '\n'.join(rows)
+    
+    def _create_lead_charts(self, leads_df):
+        """Create charts for lead overview
+        
+        Args:
+            leads_df (pandas.DataFrame): DataFrame containing lead information
+            
+        Returns:
+            str: HTML content for lead charts
+        """
+        # Create tier distribution chart
+        if 'tier' in leads_df.columns:
+            tier_counts = leads_df['tier'].value_counts().reset_index()
+            tier_counts.columns = ['Tier', 'Count']
+            
+            tier_fig = px.pie(
+                tier_counts, 
+                values='Count', 
+                names='Tier', 
+                title='Lead Distribution by Tier',
+                color='Tier',
+                color_discrete_map={
+                    'Tier 1': '#4caf50',
+                    'Tier 2': '#ffeb3b',
+                    'Tier 3': '#f44336'
+                }
+            )
+            tier_fig.update_traces(textposition='inside', textinfo='percent+label')
+            tier_chart = tier_fig.to_html(full_html=False, include_plotlyjs=False)
+        else:
+            tier_chart = "<p>No tier data available</p>"
+        
+        # Create lead score distribution chart
+        if 'lead_score' in leads_df.columns:
+            score_fig = px.histogram(
+                leads_df, 
+                x='lead_score', 
+                nbins=10,
+                title='Lead Score Distribution',
+                color_discrete_sequence=[self.color_scale[3]]
+            )
+            score_fig.update_layout(xaxis_title='Lead Score', yaxis_title='Number of Leads')
+            score_chart = score_fig.to_html(full_html=False, include_plotlyjs=False)
+        else:
+            score_chart = "<p>No lead score data available</p>"
+        
+        # Combine charts into HTML
+        html_content = f"""
+        <div class="chart-half">
+            {tier_chart}
+        </div>
+        <div class="chart-half">
+            {score_chart}
+        </div>
+        """
+        
+        return html_content
+    
+    def _create_company_charts(self, df):
+        """Create charts for company insights
+        
+        Args:
+            df (pandas.DataFrame): DataFrame containing company information
+            
+        Returns:
+            str: HTML content for company charts
+        """
+        # Create industry distribution chart
+        if 'industry' in df.columns:
+            industry_counts = df['industry'].value_counts().reset_index()
+            industry_counts.columns = ['Industry', 'Count']
+            
+            # Limit to top 10 industries for readability
+            if len(industry_counts) > 10:
+                other_count = industry_counts.iloc[10:]['Count'].sum()
+                industry_counts = industry_counts.iloc[:10]
+                industry_counts = pd.concat([industry_counts, pd.DataFrame([{'Industry': 'Other', 'Count': other_count}])])
+            
+            industry_fig = px.bar(
+                industry_counts, 
+                x='Industry', 
+                y='Count', 
+                title='Companies by Industry',
+                color='Count',
+                color_continuous_scale=self.color_scale
+            )
+            industry_fig.update_layout(xaxis_title='Industry', yaxis_title='Number of Companies')
+            industry_chart = industry_fig.to_html(full_html=False, include_plotlyjs=False)
+        else:
+            industry_chart = "<p>No industry data available</p>"
+        
+        # Create company size distribution chart
+        if 'company_size' in df.columns:
+            size_counts = df['company_size'].value_counts().reset_index()
+            size_counts.columns = ['Company Size', 'Count']
+            
+            size_fig = px.pie(
+                size_counts, 
+                values='Count', 
+                names='Company Size', 
+                title='Companies by Size',
+                color='Company Size',
+                color_discrete_sequence=self.color_scale
+            )
+            size_fig.update_traces(textposition='inside', textinfo='percent+label')
+            size_chart = size_fig.to_html(full_html=False, include_plotlyjs=False)
+        else:
+            size_chart = "<p>No company size data available</p>"
+        
+        # Combine charts into HTML
+        html_content = f"""
+        <div class="chart-half">
+            {industry_chart}
+        </div>
+        <div class="chart-half">
+            {size_chart}
+        </div>
+        """
+        
+        return html_content
+    
+    def _create_stakeholder_charts(self, df):
+        """Create charts for stakeholder analysis
+        
+        Args:
+            df (pandas.DataFrame): DataFrame containing stakeholder information
+            
+        Returns:
+            str: HTML content for stakeholder charts
+        """
+        # Create decision power vs company score scatter plot
+        if 'decision_making_power' in df.columns and 'company_score' in df.columns:
+            scatter_fig = px.scatter(
+                df, 
+                x='decision_making_power', 
+                y='company_score',
+                color='lead_score' if 'lead_score' in df.columns else None,
+                size='lead_score' if 'lead_score' in df.columns else None,
+                hover_name='name' if 'name' in df.columns else None,
+                hover_data=['company', 'title'] if all(col in df.columns for col in ['company', 'title']) else None,
+                title='Stakeholder Decision Power vs Company Score',
+                color_continuous_scale=self.color_scale
+            )
+            scatter_fig.update_layout(
+                xaxis_title='Decision Making Power',
+                yaxis_title='Company Score',
+                xaxis=dict(range=[0, 1]),
+                yaxis=dict(range=[0, 1])
+            )
+            scatter_chart = scatter_fig.to_html(full_html=False, include_plotlyjs=False)
+        else:
+            scatter_chart = "<p>No stakeholder scoring data available</p>"
+        
+        # Create job title distribution chart
+        if 'title' in df.columns:
+            # Extract job categories from titles
+            def categorize_title(title):
+                title = str(title).lower()
+                if any(keyword in title for keyword in ['ceo', 'chief', 'president', 'owner', 'founder']):
+                    return 'Executive'
+                elif any(keyword in title for keyword in ['director', 'vp', 'vice president', 'head']):
+                    return 'Director/VP'
+                elif any(keyword in title for keyword in ['manager', 'lead', 'senior']):
+                    return 'Manager'
+                else:
+                    return 'Other'
+            
+            df['job_category'] = df['title'].apply(categorize_title)
+            title_counts = df['job_category'].value_counts().reset_index()
+            title_counts.columns = ['Job Category', 'Count']
+            
+            title_fig = px.pie(
+                title_counts, 
+                values='Count', 
+                names='Job Category', 
+                title='Stakeholders by Job Level',
+                color='Job Category',
+                color_discrete_sequence=self.color_scale
+            )
+            title_fig.update_traces(textposition='inside', textinfo='percent+label')
+            title_chart = title_fig.to_html(full_html=False, include_plotlyjs=False)
+        else:
+            title_chart = "<p>No job title data available</p>"
+        
+        # Combine charts into HTML
+        html_content = f"""
+        <div class="chart-half">
+            {scatter_chart}
+        </div>
+        <div class="chart-half">
+            {title_chart}
+        </div>
+        """
+        
+        return html_content
