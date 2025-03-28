@@ -124,8 +124,8 @@ class StakeholderFinder:
                     all_stakeholders.extend(stakeholders)
                     self.logger.info(f"Found {len(stakeholders)} stakeholders for {company_name} using Hunter.io")
                     
-                    # Respect rate limits
-                    time.sleep(self.delay)
+                    # Respect rate limits but use a minimal delay to speed up processing
+                    time.sleep(self.delay / 2)  # Use half the configured delay to speed up processing
                     continue
             
             # If Hunter.io API is not available or no stakeholders found, generate synthetic stakeholders

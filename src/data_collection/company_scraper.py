@@ -60,30 +60,17 @@ class CompanyScraper:
         Returns:
             pandas.DataFrame: DataFrame containing combined company information
         """
-        self.logger.info("Collecting company data from events and associations")
+        self.logger.info("Collecting company data from ISA Sign Expo 2025")
         
-        # Scrape companies from events
-        event_companies_df = self.scrape_companies_from_events(events_df)
+        # Get real company data from ISA Sign Expo 2025
+        from src.data_collection.isa_expo_companies import ISAExpoCompanies
+        isa_companies = ISAExpoCompanies()
+        companies_df = isa_companies.get_companies()
+        self.logger.info(f"Using {len(companies_df)} real companies from ISA Sign Expo 2025")
         
-        # Scrape companies from associations
-        association_companies_df = self.scrape_companies_from_associations(associations_df)
-        
-        # Combine the two DataFrames
-        if not event_companies_df.empty and not association_companies_df.empty:
-            companies_df = pd.concat([event_companies_df, association_companies_df])
-            companies_df = companies_df.drop_duplicates(subset=['name', 'website'])
-        elif not event_companies_df.empty:
-            companies_df = event_companies_df
-        elif not association_companies_df.empty:
-            companies_df = association_companies_df
-        else:
-            # If no companies found, create a sample dataset for testing
-            self.logger.warning("No companies found from events or associations. Creating sample data.")
-            companies_df = self._create_sample_companies()
-        
-        # Save the combined data
+        # Save the real company data to CSV
         companies_df.to_csv(self.output_dir / 'companies.csv', index=False)
-        self.logger.info(f"Saved {len(companies_df)} companies to companies.csv")
+        self.logger.info(f"Saved {len(companies_df)} real companies from ISA Sign Expo 2025 to companies.csv")
         
         return companies_df
     
@@ -137,6 +124,115 @@ class CompanyScraper:
         ]
         
         return pd.DataFrame(sample_companies)
+        
+    def parse_companies_from_text(self, text_data):
+        """Parse company information from provided text data
+        
+        This method is used when web scraping doesn't work. It parses company information
+        from text data copied from websites like ISA Sign Expo 2025.
+        
+        Args:
+            text_data (str): Text data containing company information
+            
+        Returns:
+            pandas.DataFrame: DataFrame containing company information
+        """
+        self.logger.info("Parsing company information from provided text data")
+        
+        all_companies = []
+        
+        # Split the text into sections (Featured Exhibitors and All Exhibitors)
+        sections = text_data.split("All Exhibitors")
+        
+        # Process both sections
+        for section_idx, section in enumerate(sections):
+            # Skip empty sections
+            if not section.strip():
+                continue
+                
+            # Determine if this is the featured section
+            is_featured = section_idx == 0 and "Featured Exhibitors" in section
+            
+            # Split the section into company blocks
+            # Each company block starts with a company name and ends before the next company name
+            company_blocks = re.split(r'\n(?=[A-Z][\w\s]+\n)', section)
+            
+            for block in company_blocks:
+                # Skip headers and empty blocks
+                if not block.strip() or any(header in block for header in ["ExhibitorSummaryBoothAdd to Planner", "Featured Exhibitors", "See Results on Floor Plan"]):
+                    continue
+                
+                # Extract company name (first line)
+                lines = block.strip().split('\n')
+                if not lines:
+                    continue
+                    
+                company_name = lines[0].strip()
+                
+                # Skip if this is not a company entry
+                if not company_name or company_name in ["Grid List", "See Results on Floor Plan", "Results for Keyword"]:
+                    continue
+                
+                # Initialize company data
+                company = {
+                    'name': company_name,
+                    'featured': is_featured
+                }
+                
+                # Extract description (all lines except first and last)
+                if len(lines) > 2:
+                    description = ' '.join(lines[1:-1]).strip()
+                    # Clean up description (remove ellipsis if present)
+                    if description.endswith('...'):
+                        description = description[:-3].strip()
+                    company['description'] = description
+                else:
+                    company['description'] = ''
+                
+                # Extract booth number (last line)
+                if len(lines) > 1:
+                    booth = lines[-1].strip()
+                    # Check if it's a valid booth number (typically numeric or alphanumeric)
+                    if re.match(r'^[\w\d, ]+$', booth):
+                        company['booth'] = booth
+                    else:
+                        company['booth'] = ''
+                else:
+                    company['booth'] = ''
+                
+                # Add source information
+                company['source_type'] = 'event'
+                company['source_event'] = 'ISA Sign Expo 2025'
+                company['industry'] = 'Graphics & Signage'
+                company['relevance_score'] = 0.9 if is_featured else 0.8
+                
+                # Add placeholder for website (not available in text data)
+                company['website'] = ''
+                
+                all_companies.append(company)
+        
+        # Create DataFrame from all companies
+        companies_df = pd.DataFrame(all_companies)
+        
+        # Save raw companies data
+        if not companies_df.empty:
+            output_file = self.output_dir / 'companies_from_text.csv'
+            companies_df.to_csv(output_file, index=False)
+            self.logger.info(f"Saved {len(companies_df)} companies from text data to companies_from_text.csv")
+            
+            # Also append to companies_raw.csv if it exists
+            companies_file = self.output_dir / 'companies_raw.csv'
+            if companies_file.exists():
+                try:
+                    existing_df = pd.read_csv(companies_file)
+                    combined_df = pd.concat([existing_df, companies_df])
+                    combined_df = combined_df.drop_duplicates(subset=['name'])
+                    combined_df.to_csv(companies_file, index=False)
+                    self.logger.info(f"Updated companies_raw.csv with {len(companies_df)} new companies from text data")
+                except Exception as e:
+                    self.logger.error(f"Error updating companies_raw.csv with text data: {str(e)}")
+        
+        return companies_df
     
     def scrape_companies_from_events(self, events_df):
         """Scrape company information from event websites
@@ -156,6 +252,9 @@ class CompanyScraper:
             from src.data_collection.isa_expo_scraper import ISAExpoScraper
             self.logger.info("Using ISA Expo Scraper to get real company data")
             isa_scraper = ISAExpoScraper()
+            
+            # Try web scraping first
+            self.logger.info("Attempting to scrape companies from ISA Sign Expo website")
             isa_exhibitors_df = isa_scraper.scrape_exhibitors()
             
             if not isa_exhibitors_df.empty:
@@ -166,12 +265,86 @@ class CompanyScraper:
                         'name': exhibitor.get('name', ''),
                         'website': exhibitor.get('website', ''),
                         'description': exhibitor.get('description', ''),
+                        'booth': exhibitor.get('booth', ''),
                         'source_type': 'event',
                         'source_event': 'ISA Sign Expo',
                         'industry': 'Graphics & Signage',
                         'relevance_score': 0.9
                     }
                     all_companies.append(company)
+            else:
+                # If web scraping fails, check if we have text data to parse
+                self.logger.info("Web scraping failed. Checking for text data to parse...")
+                
+                # Sample text data from ISA Sign Expo 2025 with graphics keyword search
+                # This would typically come from user input or a file
+                isa_expo_text = """
+                100 Results for Keyword: "graphics"
+                 Grid List
+                Featured Exhibitors ( 5 )
+                 See Results on Floor Plan
+                ExhibitorSummaryBoothAdd to Planner
+                CUTWORX USA
+                CUTWORX USA offers a complete line of finishing solutions for all your printing, cutting, laminating, and textile needs. CUTWORX USA was founded to consolidate our focus on digital finishing equipm...
+                2637
+                General Formulations
+                General Formulations® (GF) is a global manufacturer of pressure-sensitive print media headquartered in the USA, since 1953. GF offers a cross-platform portfolio of print and cut film and laminate solu...
+                1937
+                Laguna Tools Inc.
+                For over four decades, Laguna Tools has been a pioneer in the machinery industry, delivering innovative solutions that empower artisans, craftsmen, and businesses to achieve unparalleled precision and...
+                1021
+                 
+                Lintec of America, Inc.
+                Lintec Corporation is a premier supplier of pressure sensitive films and specialty media. Please visit our booth to see our lineup of optically clear window graphics films WINCOS TM.
+                2364
+                Signage Details
+                Subscribe today for unlimited access to proven, industry-standard, permit-ready section details for fabricating and installing commercial signs. With our exclusive, patent-pending, intuitive Select-A-...
+                3813
+                All Exhibitors ( 100 )
+                 See Results on Floor Plan
+                ExhibitorSummaryBoothAdd to Planner
+                 
+                3A Composites USA, Inc.
+                3A Composites USA specializes in the manufacturing of leading composite substrates for the display, graphic arts, signage & framing industries throughout the Americas. Category defining brands like DI...
+                1222
+                3M Commercial Solutions
+                3M Commercial Graphics helps customers worldwide build brands by providing total large-format graphics and light management solutions. 3M manufactures or certifies lighting solutions, graphic films an...
+                4725
+                 
+                A.R.K. Ramos Foundry & Mfg. Co.
+                A.R.K. Ramos manufactures cast and etched aluminum, brass, and bronze plaques. We also produce cast letters, cut graphics, and reverse channel letters in a variety of metals including aluminum, brass,...
+                4549
+                 
+                Abitech
+                Abitech is a distinguished wholesale distributor specializing in signage materials and graphics. Our expertise lies in delivering the utmost quality materials at competitive prices with a dedicated fo...
+                4618
+                 
+                ADMAX Exhibit & Display Ltd.
+                Established in 1999, Admax Exhibit & Display Ltd. is one of the biggest display company in China. Admax is specialized in supplying modular exhibits, portable display, creative signs and custom printi...
+                2369, 4018
+                Advanced Greig Laminators, Inc.
+                AGL is the leading manufacturer/distributor of high quality laminating equipment and finishing supplies. At ISA 2025, AGL will showcase two examples of our class leading laminators. Each are designed ...
+                4749
+                """
+                
+                # Parse the text data
+                text_exhibitors_df = isa_scraper.parse_exhibitor_text(isa_expo_text)
+                
+                if not text_exhibitors_df.empty:
+                    self.logger.info(f"Successfully parsed {len(text_exhibitors_df)} companies from ISA Expo text data")
+                    # Convert to the format expected by the rest of the pipeline
+                    for _, exhibitor in text_exhibitors_df.iterrows():
+                        company = {
+                            'name': exhibitor.get('name', ''),
+                            'website': exhibitor.get('website', ''),
+                            'description': exhibitor.get('description', ''),
+                            'booth': exhibitor.get('booth', ''),
+                            'source_type': 'event',
+                            'source_event': 'ISA Sign Expo',
+                            'industry': 'Graphics & Signage',
+                            'relevance_score': 0.85  # Slightly lower score for text-parsed data
+                        }
+                        all_companies.append(company)
         except Exception as e:
             self.logger.error(f"Error using ISA Expo Scraper: {str(e)}")
         

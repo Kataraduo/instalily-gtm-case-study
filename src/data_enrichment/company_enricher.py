@@ -168,8 +168,8 @@ class CompanyEnricher:
                         if location_parts:
                             companies_df.at[idx, 'location'] = ', '.join(location_parts)
                 
-                # Respect rate limits
-                time.sleep(self.delay)
+                # Respect rate limits but use a minimal delay to speed up processing
+                time.sleep(self.delay / 2)  # Use half the configured delay to speed up processing
                 
             except Exception as e:
                 self.logger.error(f"Error enriching {company.get('name', '')} with Clearbit: {str(e)}")
@@ -318,7 +318,11 @@ class CompanyEnricher:
         
         # If no products found, add default products based on industry
         if not products:
-            industry = company.get('industry', '').lower()
+            industry = company.get('industry', '')
+            # Ensure industry is a string before calling lower()
+            if not isinstance(industry, str):
+                industry = str(industry) if industry is not None else ''
+            industry = industry.lower()
             
             if 'sign' in industry or 'display' in industry:
                 products = ['Signs', 'Displays']

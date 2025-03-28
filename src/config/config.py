@@ -30,8 +30,8 @@ TARGET_PRODUCT = "DuPont Tedlar"
 
 # Web scraping configuration
 USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
-REQUEST_TIMEOUT = 30  # seconds
-REQUEST_DELAY = 2  # seconds between requests
+REQUEST_TIMEOUT = 20  # seconds - reduced timeout
+REQUEST_DELAY = 0.5  # seconds between requests - reduced delay for faster execution
 
 # Dashboard configuration
 DASHBOARD_TITLE = "DuPont Tedlar Sales Lead Dashboard"

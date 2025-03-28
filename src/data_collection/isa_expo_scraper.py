@@ -91,8 +91,8 @@ class ISAExpoScraper:
                 else:
                     self.logger.warning(f"Failed to scrape details for {name}")
                 
-                # Respect rate limits
-                time.sleep(self.delay)
+                # Respect rate limits but use a minimal delay to speed up processing
+                time.sleep(self.delay / 2)  # Use half the configured delay to speed up processing
                 
             except Exception as e:
                 self.logger.error(f"Error scraping exhibitor {name}: {str(e)}")
@@ -550,9 +550,153 @@ class ISAExpoScraper:
         return " | ".join(reasons)
 
 
+    def parse_exhibitor_text(self, text_data):
+        """Parse exhibitor information from provided text data
+        
+        This method is used as a fallback when web scraping doesn't work. It parses
+        exhibitor information from text data copied from the ISA Sign Expo website.
+        
+        Args:
+            text_data (str): Text data containing exhibitor information
+            
+        Returns:
+            pandas.DataFrame: DataFrame containing exhibitor information
+        """
+        self.logger.info("Parsing exhibitor information from provided text data")
+        
+        all_exhibitors = []
+        
+        # Split the text into sections (Featured Exhibitors and All Exhibitors)
+        sections = text_data.split("All Exhibitors")
+        
+        # Process both sections
+        for section_idx, section in enumerate(sections):
+            # Skip empty sections
+            if not section.strip():
+                continue
+                
+            # Determine if this is the featured section
+            is_featured = section_idx == 0 and "Featured Exhibitors" in section
+            
+            # Split the section into exhibitor blocks
+            # Each exhibitor block starts with a company name and ends before the next company name
+            exhibitor_blocks = re.split(r'\n(?=[A-Z][\w\s]+\n)', section)
+            
+            for block in exhibitor_blocks:
+                # Skip headers and empty blocks
+                if not block.strip() or any(header in block for header in ["ExhibitorSummaryBoothAdd to Planner", "Featured Exhibitors", "See Results on Floor Plan"]):
+                    continue
+                
+                # Extract company name (first line)
+                lines = block.strip().split('\n')
+                if not lines:
+                    continue
+                    
+                company_name = lines[0].strip()
+                
+                # Skip if this is not a company entry
+                if not company_name or company_name in ["Grid List", "See Results on Floor Plan"]:
+                    continue
+                
+                # Initialize exhibitor data
+                exhibitor = {
+                    'name': company_name,
+                    'exhid': '',  # No ID in text data
+                    'detail_url': '',  # No URL in text data
+                    'featured': is_featured
+                }
+                
+                # Extract description (all lines except first and last)
+                if len(lines) > 2:
+                    description = ' '.join(lines[1:-1]).strip()
+                    # Clean up description (remove ellipsis if present)
+                    if description.endswith('...'):
+                        description = description[:-3].strip()
+                    exhibitor['description'] = description
+                else:
+                    exhibitor['description'] = ''
+                
+                # Extract booth number (last line)
+                if len(lines) > 1:
+                    booth = lines[-1].strip()
+                    # Check if it's a valid booth number (typically numeric or alphanumeric)
+                    if re.match(r'^[\w\d]+$', booth):
+                        exhibitor['booth'] = booth
+                    else:
+                        exhibitor['booth'] = ''
+                else:
+                    exhibitor['booth'] = ''
+                
+                # Add placeholder values for fields not available in text data
+                exhibitor['website'] = ''
+                exhibitor['address'] = ''
+                exhibitor['city'] = ''
+                exhibitor['state'] = ''
+                exhibitor['zip'] = ''
+                exhibitor['country'] = ''
+                exhibitor['phone'] = ''
+                exhibitor['product_categories'] = 'Graphics'  # Since these are from a graphics search
+                
+                # Generate qualification reason
+                exhibitor['qualification_reason'] = self._generate_qualification_reason(exhibitor)
+                
+                all_exhibitors.append(exhibitor)
+        
+        # Create DataFrame from all exhibitors
+        exhibitors_df = pd.DataFrame(all_exhibitors)
+        
+        # Save raw exhibitors data
+        if not exhibitors_df.empty:
+            output_file = self.output_dir / 'isa_expo_exhibitors_from_text.csv'
+            exhibitors_df.to_csv(output_file, index=False)
+            self.logger.info(f"Saved {len(exhibitors_df)} exhibitors from text data to isa_expo_exhibitors_from_text.csv")
+            
+            # Also append to companies_raw.csv if it exists
+            companies_file = self.output_dir / 'companies_raw.csv'
+            if companies_file.exists():
+                try:
+                    companies_df = pd.read_csv(companies_file)
+                    
+                    # Rename columns to match companies_raw.csv format
+                    exhibitors_df_renamed = exhibitors_df.rename(columns={
+                        'name': 'name',
+                        'website': 'website',
+                        'description': 'description',
+                        'booth': 'booth',
+                        'address': 'address',
+                        'city': 'city',
+                        'state': 'state',
+                        'zip': 'zip',
+                        'country': 'country',
+                        'phone': 'phone',
+                        'product_categories': 'products'
+                    })
+                    
+                    # Add source information
+                    exhibitors_df_renamed['source_event'] = 'ISA Sign Expo 2025'
+                    exhibitors_df_renamed['source_type'] = 'event'
+                    
+                    # Select only columns that exist in companies_raw.csv
+                    common_columns = set(companies_df.columns).intersection(set(exhibitors_df_renamed.columns))
+                    exhibitors_df_renamed = exhibitors_df_renamed[list(common_columns)]
+                    
+                    # Combine with existing companies
+                    combined_df = pd.concat([companies_df, exhibitors_df_renamed])
+                    combined_df = combined_df.drop_duplicates(subset=['name', 'website'])
+                    combined_df.to_csv(companies_file, index=False)
+                    self.logger.info(f"Updated companies_raw.csv with {len(exhibitors_df)} new companies from text data")
+                    
+                except Exception as e:
+                    self.logger.error(f"Error updating companies_raw.csv with text data: {str(e)}")
+        
+        return exhibitors_df
+
+
 def main():
     """Main function to run the ISA Expo scraper"""
     scraper = ISAExpoScraper()
+    
+    # Try web scraping first
     exhibitors_df = scraper.scrape_exhibitors()
     
     if not exhibitors_df.empty:
@@ -563,7 +707,8 @@ def main():
         print("\nSample of scraped data:")
         print(exhibitors_df[['name', 'booth', 'product_categories', 'qualification_reason']].head())
     else:
-        print("No exhibitors were scraped from the ISA Sign Expo website")
+        print("Web scraping failed. No exhibitors were scraped from the ISA Sign Expo website")
+        print("You can use the parse_exhibitor_text method to parse exhibitor information from text data")
 
 
 if __name__ == "__main__":
