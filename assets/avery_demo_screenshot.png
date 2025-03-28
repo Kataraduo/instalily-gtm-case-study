@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <!-- Background -->
+  <rect width="800" height="500" fill="#f8f9fa" />
+  
+  <!-- Dashboard Header -->
+  <rect x="0" y="0" width="800" height="60" fill="#0d6efd" />
+  <text x="20" y="38" font-family="Arial" font-size="24" font-weight="bold" fill="white">DuPont Tedlar Lead Dashboard</text>
+  
+  <!-- Company Card -->
+  <rect x="20" y="80" width="760" height="400" rx="5" ry="5" fill="white" stroke="#dee2e6" stroke-width="1" />
+  
+  <!-- Company Header -->
+  <rect x="20" y="80" width="760" height="50" rx="5" ry="5" fill="#e9ecef" />
+  <text x="40" y="112" font-family="Arial" font-size="18" font-weight="bold" fill="#212529">Avery Dennison Graphics Solutions</text>
+  <text x="600" y="112" font-family="Arial" font-size="16" font-weight="bold" fill="#198754">Medium Priority</text>
+  
+  <!-- Company Details -->
+  <text x="40" y="150" font-family="Arial" font-size="14" fill="#212529">Industry: Graphics &amp; Signage</text>
+  <text x="40" y="175" font-family="Arial" font-size="14" fill="#212529">Website: https://graphics.averydennison.com</text>
+  <text x="40" y="200" font-family="Arial" font-size="14" fill="#212529">Description: Avery Dennison Graphics Solutions provides materials and solutions for graphics applications.</text>
+  
+  <!-- Qualification Details -->
+  <text x="40" y="235" font-family="Arial" font-size="16" font-weight="bold" fill="#212529">Qualification Details:</text>
+  <text x="40" y="260" font-family="Arial" font-size="14" fill="#212529">• Products: Vinyl, Aluminum, Acrylic</text>
+  <text x="40" y="285" font-family="Arial" font-size="14" fill="#212529">• Markets: Corporate, Retail, Events</text>
+  <text x="40" y="310" font-family="Arial" font-size="14" fill="#212529">• Qualification Score: 0.54</text>
+  
+  <!-- Stakeholders -->
+  <text x="40" y="345" font-family="Arial" font-size="16" font-weight="bold" fill="#212529">Key Stakeholders:</text>
+  
+  <!-- Stakeholder 1 -->
+  <rect x="40" y="360" width="720" height="30" rx="3" ry="3" fill="#f8f9fa" />
+  <text x="50" y="380" font-family="Arial" font-size="14" fill="#212529">FirstName1 LastName1</text>
+  <text x="250" y="380" font-family="Arial" font-size="14" fill="#212529">Chief Technology Officer</text>
+  <text x="500" y="380" font-family="Arial" font-size="14" fill="#212529">High Engagement (0.9)</text>
+  
+  <!-- Stakeholder 2 -->
+  <rect x="40" y="395" width="720" height="30" rx="3" ry="3" fill="white" />
+  <text x="50" y="415" font-family="Arial" font-size="14" fill="#212529">FirstName2 LastName2</text>
+  <text x="250" y="415" font-family="Arial" font-size="14" fill="#212529">Innovation Manager</text>
+  <text x="500" y="415" font-family="Arial" font-size="14" fill="#212529">Medium Engagement (0.7)</text>
+  
+  <!-- Stakeholder 3 -->
+  <rect x="40" y="430" width="720" height="30" rx="3" ry="3" fill="#f8f9fa" />
+  <text x="50" y="450" font-family="Arial" font-size="14" fill="#212529">FirstName3 LastName3</text>
+  <text x="250" y="450" font-family="Arial" font-size="14" fill="#212529">Marketing Director</text>
+  <text x="500" y="450" font-family="Arial" font-size="14" fill="#212529">High Engagement (0.9)</text>
+</svg>
