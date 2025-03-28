@@ -29,7 +29,7 @@ python run_pipeline.py
 ```
 
 This will:
-1. Collect real company data from ISA Sign Expo 2025
+1. Collect real company data from [ISA Sign Expo 2025](https://isasignexpo2025.mapyourshow.com/8_0/#/searchtype/keyword/search/graphics/show/all)
 2. Enrich company information with additional details
 3. Find key stakeholders at each company
 4. Score and qualify leads based on relevance to DuPont Tedlar
