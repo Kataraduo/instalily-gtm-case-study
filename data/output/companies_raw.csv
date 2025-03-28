@@ -1,12 +1,11 @@
 name,website,description,source_event,source_type,source_association
+Home,,,ISA Sign Expo 2025,event,
+Featured Exhibitors,,,ISA Sign Expo 2025,event,
+Your Details,,,European Sign Expo 2025,event,
 703-385-1335,,,PRINTING United Expo,event,
 register@printingunited.com,mailto:http://register@printingunited.com,,PRINTING United Expo,event,
 Need help logging in?,,,PRINTING United Expo,event,
 Need help registering for an event?,,,PRINTING United Expo,event,
-Your Details,,,European Sign Expo 2025,event,
-Home,,,ISA Sign Expo,event,
-Featured Exhibitors,,,ISA Sign Expo,event,
-{{content.resetFilters}},,,ISA Sign Expo,event,
 703-385-1335,,,,association,PRINTING United Alliance
 Need help logging in?,,,,association,PRINTING United Alliance
 Need help registering for an event?,,,,association,PRINTING United Alliance

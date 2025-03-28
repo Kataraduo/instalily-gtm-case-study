@@ -151,30 +151,57 @@ class CompanyScraper:
         
         all_companies = []
         
-        for _, event in events_df.iterrows():
-            event_name = event['name']
-            event_url = event['url']
+        # First, try to use ISA Expo Scraper to get real company data
+        try:
+            from src.data_collection.isa_expo_scraper import ISAExpoScraper
+            self.logger.info("Using ISA Expo Scraper to get real company data")
+            isa_scraper = ISAExpoScraper()
+            isa_exhibitors_df = isa_scraper.scrape_exhibitors()
             
-            self.logger.info(f"Scraping companies from event: {event_name}")
-            
-            # Extract exhibitor list URL from event website
-            exhibitor_url = self._get_exhibitor_list_url(event_url)
-            
-            if not exhibitor_url:
-                self.logger.warning(f"Could not find exhibitor list for {event_name}")
-                continue
-            
-            # Scrape companies from exhibitor list
-            companies = self._scrape_exhibitor_list(exhibitor_url, event_name)
-            
-            if companies:
-                all_companies.extend(companies)
-                self.logger.info(f"Found {len(companies)} companies from {event_name}")
-            else:
-                self.logger.warning(f"No companies found for {event_name}")
-            
-            # Respect rate limits
-            time.sleep(self.delay)
+            if not isa_exhibitors_df.empty:
+                self.logger.info(f"Successfully scraped {len(isa_exhibitors_df)} companies from ISA Expo")
+                # Convert to the format expected by the rest of the pipeline
+                for _, exhibitor in isa_exhibitors_df.iterrows():
+                    company = {
+                        'name': exhibitor.get('name', ''),
+                        'website': exhibitor.get('website', ''),
+                        'description': exhibitor.get('description', ''),
+                        'source_type': 'event',
+                        'source_event': 'ISA Sign Expo',
+                        'industry': 'Graphics & Signage',
+                        'relevance_score': 0.9
+                    }
+                    all_companies.append(company)
+        except Exception as e:
+            self.logger.error(f"Error using ISA Expo Scraper: {str(e)}")
+        
+        # If we didn't get any companies from ISA Expo, fall back to scraping from events
+        if not all_companies:
+            self.logger.info("Falling back to scraping companies from events")
+            for _, event in events_df.iterrows():
+                event_name = event['name']
+                event_url = event['url']
+                
+                self.logger.info(f"Scraping companies from event: {event_name}")
+                
+                # Extract exhibitor list URL from event website
+                exhibitor_url = self._get_exhibitor_list_url(event_url)
+                
+                if not exhibitor_url:
+                    self.logger.warning(f"Could not find exhibitor list for {event_name}")
+                    continue
+                
+                # Scrape companies from exhibitor list
+                companies = self._scrape_exhibitor_list(exhibitor_url, event_name)
+                
+                if companies:
+                    all_companies.extend(companies)
+                    self.logger.info(f"Found {len(companies)} companies from {event_name}")
+                else:
+                    self.logger.warning(f"No companies found for {event_name}")
+                
+                # Respect rate limits
+                time.sleep(self.delay)
         
         # Create DataFrame from all companies
         companies_df = pd.DataFrame(all_companies)

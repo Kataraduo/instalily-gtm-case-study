@@ -1,22 +1,21 @@
 name,website,description,source_event,source_type,source_association,id,industry,company_size,products,materials,target_markets,relevance_score
-703-385-1335,,,PRINTING United Expo,event,,COMP-0001,Graphics and Signage,Medium,"['Signs', 'Displays']","['Vinyl', 'Aluminum', 'Acrylic']","['Corporate', 'Retail', 'Events']",0.58
-register@printingunited.com,mailto:http://register@printingunited.com,,PRINTING United Expo,event,,COMP-0002,graphics,Medium,"['Graphics', 'Printed Materials']","['Vinyl', 'Film', 'Paper']","['Corporate', 'Retail', 'Events']",0.54
-Need help logging in?,,,PRINTING United Expo,event,,COMP-0003,Graphics and Signage,Medium,"['Signs', 'Displays']","['Vinyl', 'Aluminum', 'Acrylic']","['Corporate', 'Retail', 'Events']",0.58
-Need help registering for an event?,,,PRINTING United Expo,event,,COMP-0004,Graphics and Signage,Medium,"['Signs', 'Displays']","['Vinyl', 'Aluminum', 'Acrylic']","['Corporate', 'Retail', 'Events']",0.58
-Your Details,,,European Sign Expo 2025,event,,COMP-0005,Graphics and Signage,Medium,"['Signs', 'Displays']","['Vinyl', 'Aluminum', 'Acrylic']","['Corporate', 'Retail', 'Events']",0.58
-Home,,,ISA Sign Expo,event,,COMP-0006,Graphics and Signage,Medium,"['Signs', 'Displays']","['Vinyl', 'Aluminum', 'Acrylic']","['Corporate', 'Retail', 'Events']",0.58
-Featured Exhibitors,,,ISA Sign Expo,event,,COMP-0007,Graphics and Signage,Medium,"['Signs', 'Displays']","['Vinyl', 'Aluminum', 'Acrylic']","['Corporate', 'Retail', 'Events']",0.58
-{{content.resetFilters}},,,ISA Sign Expo,event,,COMP-0008,Graphics and Signage,Medium,"['Signs', 'Displays']","['Vinyl', 'Aluminum', 'Acrylic']","['Corporate', 'Retail', 'Events']",0.58
+Home,,,ISA Sign Expo 2025,event,,COMP-0001,Graphics and Signage,Medium,"['Signs', 'Displays']","['Vinyl', 'Aluminum', 'Acrylic']","['Corporate', 'Retail', 'Events']",0.58
+Featured Exhibitors,,,ISA Sign Expo 2025,event,,COMP-0002,Graphics and Signage,Medium,"['Signs', 'Displays']","['Vinyl', 'Aluminum', 'Acrylic']","['Corporate', 'Retail', 'Events']",0.58
+Your Details,,,European Sign Expo 2025,event,,COMP-0003,Graphics and Signage,Medium,"['Signs', 'Displays']","['Vinyl', 'Aluminum', 'Acrylic']","['Corporate', 'Retail', 'Events']",0.58
+703-385-1335,,,PRINTING United Expo,event,,COMP-0004,Graphics and Signage,Medium,"['Signs', 'Displays']","['Vinyl', 'Aluminum', 'Acrylic']","['Corporate', 'Retail', 'Events']",0.58
+register@printingunited.com,mailto:http://register@printingunited.com,,PRINTING United Expo,event,,COMP-0005,graphics,Medium,"['Graphics', 'Printed Materials']","['Vinyl', 'Film', 'Paper']","['Corporate', 'Retail', 'Events']",0.54
+Need help logging in?,,,PRINTING United Expo,event,,COMP-0006,Graphics and Signage,Medium,"['Signs', 'Displays']","['Vinyl', 'Aluminum', 'Acrylic']","['Corporate', 'Retail', 'Events']",0.58
+Need help registering for an event?,,,PRINTING United Expo,event,,COMP-0007,Graphics and Signage,Medium,"['Signs', 'Displays']","['Vinyl', 'Aluminum', 'Acrylic']","['Corporate', 'Retail', 'Events']",0.58
 "Welcome to MemberConnect, the portal for content and offerings
-reserved exclusively for FTA members.",,,,association,Flexographic Technical Association (FTA),COMP-0009,Graphics and Signage,Medium,"['Signs', 'Displays']","['Vinyl', 'Aluminum', 'Acrylic']","['Corporate', 'Retail', 'Events']",0.58
-FTA Members,,,,association,Flexographic Technical Association (FTA),COMP-0010,Graphics and Signage,Medium,"['Signs', 'Displays']","['Vinyl', 'Aluminum', 'Acrylic']","['Corporate', 'Retail', 'Events']",0.58
-FTA Member Benefits,,,,association,Flexographic Technical Association (FTA),COMP-0011,Graphics and Signage,Medium,"['Signs', 'Displays']","['Vinyl', 'Aluminum', 'Acrylic']","['Corporate', 'Retail', 'Events']",0.58
-Non-Members,,,,association,Flexographic Technical Association (FTA),COMP-0012,Graphics and Signage,Medium,"['Signs', 'Displays']","['Vinyl', 'Aluminum', 'Acrylic']","['Corporate', 'Retail', 'Events']",0.58
-,,,,association,Flexographic Technical Association (FTA),COMP-0013,Graphics and Signage,Medium,"['Signs', 'Displays']","['Vinyl', 'Aluminum', 'Acrylic']","['Corporate', 'Retail', 'Events']",0.58
-Professional Chapter Membership,https://www.aaf.org/Public/Events/All_Events.aspx,,,association,American Advertising Federation (AAF),COMP-0014,Graphics and Signage,Medium,"['Signs', 'Displays']","['Vinyl', 'Aluminum', 'Acrylic']","['Corporate', 'Retail', 'Events']",0.58
+reserved exclusively for FTA members.",,,,association,Flexographic Technical Association (FTA),COMP-0008,Graphics and Signage,Medium,"['Signs', 'Displays']","['Vinyl', 'Aluminum', 'Acrylic']","['Corporate', 'Retail', 'Events']",0.58
+FTA Members,,,,association,Flexographic Technical Association (FTA),COMP-0009,Graphics and Signage,Medium,"['Signs', 'Displays']","['Vinyl', 'Aluminum', 'Acrylic']","['Corporate', 'Retail', 'Events']",0.58
+FTA Member Benefits,,,,association,Flexographic Technical Association (FTA),COMP-0010,Graphics and Signage,Medium,"['Signs', 'Displays']","['Vinyl', 'Aluminum', 'Acrylic']","['Corporate', 'Retail', 'Events']",0.58
+Non-Members,,,,association,Flexographic Technical Association (FTA),COMP-0011,Graphics and Signage,Medium,"['Signs', 'Displays']","['Vinyl', 'Aluminum', 'Acrylic']","['Corporate', 'Retail', 'Events']",0.58
+,,,,association,Flexographic Technical Association (FTA),COMP-0012,Graphics and Signage,Medium,"['Signs', 'Displays']","['Vinyl', 'Aluminum', 'Acrylic']","['Corporate', 'Retail', 'Events']",0.58
+Professional Chapter Membership,https://www.aaf.org/Public/Events/All_Events.aspx,,,association,American Advertising Federation (AAF),COMP-0013,Graphics and Signage,Medium,"['Signs', 'Displays']","['Vinyl', 'Aluminum', 'Acrylic']","['Corporate', 'Retail', 'Events']",0.58
 "Member Benefits
 Membership Structure
 Ad 2 National Executive Committee
 Corporate Member Committee
 Council of Governors
-National Education Executive Council",https://www.aaf.org/Public/Membership/Member-Benefits.aspx,,,association,American Advertising Federation (AAF),COMP-0015,Graphics and Signage,Medium,"['Signs', 'Displays']","['Vinyl', 'Aluminum', 'Acrylic']","['Corporate', 'Retail', 'Events']",0.58
+National Education Executive Council",https://www.aaf.org/Public/Membership/Member-Benefits.aspx,,,association,American Advertising Federation (AAF),COMP-0014,Graphics and Signage,Medium,"['Signs', 'Displays']","['Vinyl', 'Aluminum', 'Acrylic']","['Corporate', 'Retail', 'Events']",0.58

@@ -1,70 +1,73 @@
 first_name,last_name,name,email,title,company,linkedin_url,source,decision_making_power,id
-FirstName1,LastName1,FirstName1 LastName1,firstname1.lastname1@703-385-1335.com,Director of Sales,703-385-1335,,Synthetic,0.9,STAKE-0001
-FirstName2,LastName2,FirstName2 LastName2,firstname2.lastname2@703-385-1335.com,Marketing Manager,703-385-1335,,Synthetic,0.7,STAKE-0002
-FirstName3,LastName3,FirstName3 LastName3,firstname3.lastname3@703-385-1335.com,Purchasing Director,703-385-1335,,Synthetic,0.9,STAKE-0003
-FirstName4,LastName4,FirstName4 LastName4,firstname4.lastname4@703-385-1335.com,Owner,703-385-1335,,Synthetic,0.9,STAKE-0004
-FirstName1,LastName1,FirstName1 LastName1,firstname1.lastname1@mailto:http:,Owner,register@printingunited.com,,Synthetic,0.9,STAKE-0005
-FirstName2,LastName2,FirstName2 LastName2,firstname2.lastname2@mailto:http:,VP of Operations,register@printingunited.com,,Synthetic,0.8,STAKE-0006
-FirstName1,LastName1,FirstName1 LastName1,firstname1.lastname1@needhelploggingin?.com,CMO,Need help logging in?,,Synthetic,0.9,STAKE-0007
-FirstName2,LastName2,FirstName2 LastName2,firstname2.lastname2@needhelploggingin?.com,Marketing Director,Need help logging in?,,Synthetic,0.9,STAKE-0008
-FirstName3,LastName3,FirstName3 LastName3,firstname3.lastname3@needhelploggingin?.com,R&D Manager,Need help logging in?,,Synthetic,0.7,STAKE-0009
-FirstName4,LastName4,FirstName4 LastName4,firstname4.lastname4@needhelploggingin?.com,Purchasing VP,Need help logging in?,,Synthetic,0.8,STAKE-0010
-FirstName1,LastName1,FirstName1 LastName1,firstname1.lastname1@needhelpregisteringforanevent?.com,Operations VP,Need help registering for an event?,,Synthetic,0.8,STAKE-0011
-FirstName2,LastName2,FirstName2 LastName2,firstname2.lastname2@needhelpregisteringforanevent?.com,Sales VP,Need help registering for an event?,,Synthetic,0.6,STAKE-0012
-FirstName3,LastName3,FirstName3 LastName3,firstname3.lastname3@needhelpregisteringforanevent?.com,Brand Manager,Need help registering for an event?,,Synthetic,0.7,STAKE-0013
-FirstName1,LastName1,FirstName1 LastName1,firstname1.lastname1@yourdetails.com,Production Manager,Your Details,,Synthetic,0.8,STAKE-0014
-FirstName2,LastName2,FirstName2 LastName2,firstname2.lastname2@yourdetails.com,Technical Director,Your Details,,Synthetic,0.9,STAKE-0015
-FirstName3,LastName3,FirstName3 LastName3,firstname3.lastname3@yourdetails.com,Sales Director,Your Details,,Synthetic,0.9,STAKE-0016
-FirstName1,LastName1,FirstName1 LastName1,firstname1.lastname1@home.com,Innovation Manager,Home,,Synthetic,0.7,STAKE-0017
-FirstName2,LastName2,FirstName2 LastName2,firstname2.lastname2@home.com,Marketing Manager,Home,,Synthetic,0.7,STAKE-0018
-FirstName3,LastName3,FirstName3 LastName3,firstname3.lastname3@home.com,Purchasing Manager,Home,,Synthetic,0.8,STAKE-0019
-FirstName4,LastName4,FirstName4 LastName4,firstname4.lastname4@home.com,Sales Manager,Home,,Synthetic,0.6,STAKE-0020
-FirstName1,LastName1,FirstName1 LastName1,firstname1.lastname1@featuredexhibitors.com,Operations VP,Featured Exhibitors,,Synthetic,0.8,STAKE-0021
-FirstName2,LastName2,FirstName2 LastName2,firstname2.lastname2@featuredexhibitors.com,Creative Director,Featured Exhibitors,,Synthetic,0.9,STAKE-0022
-FirstName1,LastName1,FirstName1 LastName1,firstname1.lastname1@{{content.resetfilters}}.com,Purchasing Director,{{content.resetFilters}},,Synthetic,0.9,STAKE-0023
-FirstName2,LastName2,FirstName2 LastName2,firstname2.lastname2@{{content.resetfilters}}.com,Marketing VP,{{content.resetFilters}},,Synthetic,0.7,STAKE-0024
-FirstName3,LastName3,FirstName3 LastName3,firstname3.lastname3@{{content.resetfilters}}.com,Chief Marketing Officer,{{content.resetFilters}},,Synthetic,0.9,STAKE-0025
+FirstName1,LastName1,FirstName1 LastName1,firstname1.lastname1@home.com,Marketing VP,Home,,Synthetic,0.7,STAKE-0001
+FirstName2,LastName2,FirstName2 LastName2,firstname2.lastname2@home.com,Client Relations Manager,Home,,Synthetic,0.6,STAKE-0002
+FirstName3,LastName3,FirstName3 LastName3,firstname3.lastname3@home.com,CEO,Home,,Synthetic,0.9,STAKE-0003
+FirstName1,LastName1,FirstName1 LastName1,firstname1.lastname1@featuredexhibitors.com,Creative Director,Featured Exhibitors,,Synthetic,0.9,STAKE-0004
+FirstName2,LastName2,FirstName2 LastName2,firstname2.lastname2@featuredexhibitors.com,Sourcing Manager,Featured Exhibitors,,Synthetic,0.8,STAKE-0005
+FirstName1,LastName1,FirstName1 LastName1,firstname1.lastname1@yourdetails.com,Director of Purchasing,Your Details,,Synthetic,0.9,STAKE-0006
+FirstName2,LastName2,FirstName2 LastName2,firstname2.lastname2@yourdetails.com,Project Manager,Your Details,,Synthetic,0.7,STAKE-0007
+FirstName3,LastName3,FirstName3 LastName3,firstname3.lastname3@yourdetails.com,Business Development Manager,Your Details,,Synthetic,0.6,STAKE-0008
+FirstName4,LastName4,FirstName4 LastName4,firstname4.lastname4@yourdetails.com,Operations VP,Your Details,,Synthetic,0.8,STAKE-0009
+FirstName1,LastName1,FirstName1 LastName1,firstname1.lastname1@703-385-1335.com,Technical Director,703-385-1335,,Synthetic,0.9,STAKE-0010
+FirstName2,LastName2,FirstName2 LastName2,firstname2.lastname2@703-385-1335.com,Business Development Manager,703-385-1335,,Synthetic,0.6,STAKE-0011
+FirstName1,LastName1,FirstName1 LastName1,firstname1.lastname1@mailto:http:,Engineering Manager,register@printingunited.com,,Synthetic,0.7,STAKE-0012
+FirstName2,LastName2,FirstName2 LastName2,firstname2.lastname2@mailto:http:,Operations Manager,register@printingunited.com,,Synthetic,0.8,STAKE-0013
+FirstName3,LastName3,FirstName3 LastName3,firstname3.lastname3@mailto:http:,Marketing Manager,register@printingunited.com,,Synthetic,0.7,STAKE-0014
+FirstName4,LastName4,FirstName4 LastName4,firstname4.lastname4@mailto:http:,CEO,register@printingunited.com,,Synthetic,0.9,STAKE-0015
+FirstName1,LastName1,FirstName1 LastName1,firstname1.lastname1@needhelploggingin?.com,Purchasing VP,Need help logging in?,,Synthetic,0.8,STAKE-0016
+FirstName2,LastName2,FirstName2 LastName2,firstname2.lastname2@needhelploggingin?.com,CFO,Need help logging in?,,Synthetic,0.9,STAKE-0017
+FirstName3,LastName3,FirstName3 LastName3,firstname3.lastname3@needhelploggingin?.com,Engineering Manager,Need help logging in?,,Synthetic,0.7,STAKE-0018
+FirstName1,LastName1,FirstName1 LastName1,firstname1.lastname1@needhelpregisteringforanevent?.com,Business Development Manager,Need help registering for an event?,,Synthetic,0.6,STAKE-0019
+FirstName2,LastName2,FirstName2 LastName2,firstname2.lastname2@needhelpregisteringforanevent?.com,Purchasing Director,Need help registering for an event?,,Synthetic,0.9,STAKE-0020
+FirstName3,LastName3,FirstName3 LastName3,firstname3.lastname3@needhelpregisteringforanevent?.com,R&D Manager,Need help registering for an event?,,Synthetic,0.7,STAKE-0021
+FirstName4,LastName4,FirstName4 LastName4,firstname4.lastname4@needhelpregisteringforanevent?.com,Director of Marketing,Need help registering for an event?,,Synthetic,0.9,STAKE-0022
 FirstName1,LastName1,FirstName1 LastName1,"firstname1.lastname1@welcometomemberconnect,theportalforcontentandofferings
-reservedexclusivelyforftamembers..com",Director of Technology,"Welcome to MemberConnect, the portal for content and offerings
-reserved exclusively for FTA members.",,Synthetic,0.9,STAKE-0026
+reservedexclusivelyforftamembers..com",Client Relations Manager,"Welcome to MemberConnect, the portal for content and offerings
+reserved exclusively for FTA members.",,Synthetic,0.6,STAKE-0023
 FirstName2,LastName2,FirstName2 LastName2,"firstname2.lastname2@welcometomemberconnect,theportalforcontentandofferings
-reservedexclusivelyforftamembers..com",Director of Sales,"Welcome to MemberConnect, the portal for content and offerings
-reserved exclusively for FTA members.",,Synthetic,0.9,STAKE-0027
-FirstName1,LastName1,FirstName1 LastName1,firstname1.lastname1@ftamembers.com,Marketing Manager,FTA Members,,Synthetic,0.7,STAKE-0028
-FirstName2,LastName2,FirstName2 LastName2,firstname2.lastname2@ftamembers.com,Client Relations Manager,FTA Members,,Synthetic,0.6,STAKE-0029
-FirstName1,LastName1,FirstName1 LastName1,firstname1.lastname1@ftamemberbenefits.com,Sourcing Manager,FTA Member Benefits,,Synthetic,0.8,STAKE-0030
-FirstName2,LastName2,FirstName2 LastName2,firstname2.lastname2@ftamemberbenefits.com,VP of Operations,FTA Member Benefits,,Synthetic,0.8,STAKE-0031
-FirstName3,LastName3,FirstName3 LastName3,firstname3.lastname3@ftamemberbenefits.com,Director of Technology,FTA Member Benefits,,Synthetic,0.9,STAKE-0032
-FirstName4,LastName4,FirstName4 LastName4,firstname4.lastname4@ftamemberbenefits.com,Sales Director,FTA Member Benefits,,Synthetic,0.9,STAKE-0033
-FirstName1,LastName1,FirstName1 LastName1,firstname1.lastname1@non-members.com,Project Manager,Non-Members,,Synthetic,0.7,STAKE-0034
-FirstName2,LastName2,FirstName2 LastName2,firstname2.lastname2@non-members.com,CFO,Non-Members,,Synthetic,0.9,STAKE-0035
-FirstName3,LastName3,FirstName3 LastName3,firstname3.lastname3@non-members.com,Operations VP,Non-Members,,Synthetic,0.8,STAKE-0036
-FirstName1,LastName1,FirstName1 LastName1,firstname1.lastname1@.com,Purchasing Director,,,Synthetic,0.9,STAKE-0037
-FirstName2,LastName2,FirstName2 LastName2,firstname2.lastname2@.com,Account Manager,,,Synthetic,0.6,STAKE-0038
-FirstName3,LastName3,FirstName3 LastName3,firstname3.lastname3@.com,Founder,,,Synthetic,0.9,STAKE-0039
-FirstName1,LastName1,FirstName1 LastName1,firstname1.lastname1@aaf.org,Production Manager,Professional Chapter Membership,,Synthetic,0.8,STAKE-0040
-FirstName2,LastName2,FirstName2 LastName2,firstname2.lastname2@aaf.org,Engineering Manager,Professional Chapter Membership,,Synthetic,0.7,STAKE-0041
-FirstName1,LastName1,FirstName1 LastName1,firstname1.lastname1@aaf.org,CTO,"Member Benefits
+reservedexclusivelyforftamembers..com",Engineering Manager,"Welcome to MemberConnect, the portal for content and offerings
+reserved exclusively for FTA members.",,Synthetic,0.7,STAKE-0024
+FirstName3,LastName3,FirstName3 LastName3,"firstname3.lastname3@welcometomemberconnect,theportalforcontentandofferings
+reservedexclusivelyforftamembers..com",Purchasing VP,"Welcome to MemberConnect, the portal for content and offerings
+reserved exclusively for FTA members.",,Synthetic,0.8,STAKE-0025
+FirstName4,LastName4,FirstName4 LastName4,"firstname4.lastname4@welcometomemberconnect,theportalforcontentandofferings
+reservedexclusivelyforftamembers..com",Brand Manager,"Welcome to MemberConnect, the portal for content and offerings
+reserved exclusively for FTA members.",,Synthetic,0.7,STAKE-0026
+FirstName1,LastName1,FirstName1 LastName1,firstname1.lastname1@ftamembers.com,Marketing Manager,FTA Members,,Synthetic,0.7,STAKE-0027
+FirstName2,LastName2,FirstName2 LastName2,firstname2.lastname2@ftamembers.com,Purchasing Manager,FTA Members,,Synthetic,0.8,STAKE-0028
+FirstName1,LastName1,FirstName1 LastName1,firstname1.lastname1@ftamemberbenefits.com,Managing Director,FTA Member Benefits,,Synthetic,0.9,STAKE-0029
+FirstName2,LastName2,FirstName2 LastName2,firstname2.lastname2@ftamemberbenefits.com,Innovation Manager,FTA Member Benefits,,Synthetic,0.7,STAKE-0030
+FirstName1,LastName1,FirstName1 LastName1,firstname1.lastname1@non-members.com,Project Manager,Non-Members,,Synthetic,0.7,STAKE-0031
+FirstName2,LastName2,FirstName2 LastName2,firstname2.lastname2@non-members.com,Sourcing Manager,Non-Members,,Synthetic,0.8,STAKE-0032
+FirstName3,LastName3,FirstName3 LastName3,firstname3.lastname3@non-members.com,Business Development Manager,Non-Members,,Synthetic,0.6,STAKE-0033
+FirstName1,LastName1,FirstName1 LastName1,firstname1.lastname1@.com,Marketing Manager,,,Synthetic,0.7,STAKE-0034
+FirstName2,LastName2,FirstName2 LastName2,firstname2.lastname2@.com,Production Manager,,,Synthetic,0.8,STAKE-0035
+FirstName3,LastName3,FirstName3 LastName3,firstname3.lastname3@.com,Purchasing Manager,,,Synthetic,0.8,STAKE-0036
+FirstName1,LastName1,FirstName1 LastName1,firstname1.lastname1@aaf.org,Business Development Manager,Professional Chapter Membership,,Synthetic,0.6,STAKE-0037
+FirstName2,LastName2,FirstName2 LastName2,firstname2.lastname2@aaf.org,Supply Chain Manager,Professional Chapter Membership,,Synthetic,0.8,STAKE-0038
+FirstName3,LastName3,FirstName3 LastName3,firstname3.lastname3@aaf.org,Marketing Manager,Professional Chapter Membership,,Synthetic,0.7,STAKE-0039
+FirstName4,LastName4,FirstName4 LastName4,firstname4.lastname4@aaf.org,Director of Technology,Professional Chapter Membership,,Synthetic,0.9,STAKE-0040
+FirstName1,LastName1,FirstName1 LastName1,firstname1.lastname1@aaf.org,CFO,"Member Benefits
 Membership Structure
 Ad 2 National Executive Committee
 Corporate Member Committee
 Council of Governors
-National Education Executive Council",,Synthetic,0.9,STAKE-0042
-FirstName2,LastName2,FirstName2 LastName2,firstname2.lastname2@aaf.org,Director of Purchasing,"Member Benefits
+National Education Executive Council",,Synthetic,0.9,STAKE-0041
+FirstName2,LastName2,FirstName2 LastName2,firstname2.lastname2@aaf.org,Production Manager,"Member Benefits
 Membership Structure
 Ad 2 National Executive Committee
 Corporate Member Committee
 Council of Governors
-National Education Executive Council",,Synthetic,0.9,STAKE-0043
-FirstName3,LastName3,FirstName3 LastName3,firstname3.lastname3@aaf.org,Business Development Manager,"Member Benefits
+National Education Executive Council",,Synthetic,0.8,STAKE-0042
+FirstName3,LastName3,FirstName3 LastName3,firstname3.lastname3@aaf.org,Sourcing Manager,"Member Benefits
+Membership Structure
+Ad 2 National Executive Committee
+Corporate Member Committee
+Council of Governors
+National Education Executive Council",,Synthetic,0.8,STAKE-0043
+FirstName4,LastName4,FirstName4 LastName4,firstname4.lastname4@aaf.org,Account Manager,"Member Benefits
 Membership Structure
 Ad 2 National Executive Committee
 Corporate Member Committee
 Council of Governors
 National Education Executive Council",,Synthetic,0.6,STAKE-0044
-FirstName4,LastName4,FirstName4 LastName4,firstname4.lastname4@aaf.org,Marketing Director,"Member Benefits
-Membership Structure
-Ad 2 National Executive Committee
-Corporate Member Committee
-Council of Governors
-National Education Executive Council",,Synthetic,0.9,STAKE-0045
