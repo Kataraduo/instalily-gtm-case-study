@@ -1,5 +1,5 @@
 first_name,last_name,name,email,title,company,linkedin_url,source,decision_making_power,id,stakeholder_id,template_type,subject,body
-FirstName1,LastName1,FirstName1 LastName1,firstname1.lastname1@cutworxusa.com,Production Manager,CUTWORX USA,,Synthetic,0.8,STAKE-0001,STAKE-0001,follow_up,Following up: DuPont Tedlar for CUTWORX USA,"Dear FirstName1 LastName1,
+FirstName1,LastName1,FirstName1 LastName1,firstname1.lastname1@cutworxusa.com,President,CUTWORX USA,,Synthetic,0.9,STAKE-0001,STAKE-0001,follow_up,Following up: DuPont Tedlar for CUTWORX USA,"Dear FirstName1 LastName1,
 
 I wanted to follow up on my previous message about how DuPont Tedlar films could benefit CUTWORX USA's Graphics & Signage applications.
 
@@ -11,7 +11,7 @@ Best regards,
 [Your Name]
 DuPont Tedlar Graphics & Signage Team
 "
-FirstName2,LastName2,FirstName2 LastName2,firstname2.lastname2@cutworxusa.com,Client Relations Manager,CUTWORX USA,,Synthetic,0.6,STAKE-0002,STAKE-0002,follow_up,Following up: DuPont Tedlar for CUTWORX USA,"Dear FirstName2 LastName2,
+FirstName2,LastName2,FirstName2 LastName2,firstname2.lastname2@cutworxusa.com,Marketing Director,CUTWORX USA,,Synthetic,0.9,STAKE-0002,STAKE-0002,follow_up,Following up: DuPont Tedlar for CUTWORX USA,"Dear FirstName2 LastName2,
 
 I wanted to follow up on my previous message about how DuPont Tedlar films could benefit CUTWORX USA's Graphics & Signage applications.
 
@@ -23,7 +23,7 @@ Best regards,
 [Your Name]
 DuPont Tedlar Graphics & Signage Team
 "
-FirstName1,LastName1,FirstName1 LastName1,firstname1.lastname1@generalformulations.com,Purchasing Manager,General Formulations,,Synthetic,0.8,STAKE-0003,STAKE-0003,follow_up,Following up: DuPont Tedlar for General Formulations,"Dear FirstName1 LastName1,
+FirstName1,LastName1,FirstName1 LastName1,firstname1.lastname1@generalformulations.com,VP of Marketing,General Formulations,,Synthetic,0.7,STAKE-0003,STAKE-0003,follow_up,Following up: DuPont Tedlar for General Formulations,"Dear FirstName1 LastName1,
 
 I wanted to follow up on my previous message about how DuPont Tedlar films could benefit General Formulations's Graphics & Signage applications.
 
@@ -47,7 +47,7 @@ Best regards,
 [Your Name]
 DuPont Tedlar Graphics & Signage Team
 "
-FirstName3,LastName3,FirstName3 LastName3,firstname3.lastname3@generalformulations.com,Technical Director,General Formulations,,Synthetic,0.9,STAKE-0005,STAKE-0005,follow_up,Following up: DuPont Tedlar for General Formulations,"Dear FirstName3 LastName3,
+FirstName3,LastName3,FirstName3 LastName3,firstname3.lastname3@generalformulations.com,Director of Technology,General Formulations,,Synthetic,0.9,STAKE-0005,STAKE-0005,follow_up,Following up: DuPont Tedlar for General Formulations,"Dear FirstName3 LastName3,
 
 I wanted to follow up on my previous message about how DuPont Tedlar films could benefit General Formulations's Graphics & Signage applications.
 
@@ -59,7 +59,7 @@ Best regards,
 [Your Name]
 DuPont Tedlar Graphics & Signage Team
 "
-FirstName4,LastName4,FirstName4 LastName4,firstname4.lastname4@generalformulations.com,Founder,General Formulations,,Synthetic,0.9,STAKE-0006,STAKE-0006,follow_up,Following up: DuPont Tedlar for General Formulations,"Dear FirstName4 LastName4,
+FirstName4,LastName4,FirstName4 LastName4,firstname4.lastname4@generalformulations.com,CFO,General Formulations,,Synthetic,0.9,STAKE-0006,STAKE-0006,follow_up,Following up: DuPont Tedlar for General Formulations,"Dear FirstName4 LastName4,
 
 I wanted to follow up on my previous message about how DuPont Tedlar films could benefit General Formulations's Graphics & Signage applications.
 
@@ -71,7 +71,7 @@ Best regards,
 [Your Name]
 DuPont Tedlar Graphics & Signage Team
 "
-FirstName1,LastName1,FirstName1 LastName1,firstname1.lastname1@lagunatools.com,Marketing Director,Laguna Tools Inc.,,Synthetic,0.9,STAKE-0007,STAKE-0007,follow_up,Following up: DuPont Tedlar for Laguna Tools Inc.,"Dear FirstName1 LastName1,
+FirstName1,LastName1,FirstName1 LastName1,firstname1.lastname1@lagunatools.com,VP of Operations,Laguna Tools Inc.,,Synthetic,0.8,STAKE-0007,STAKE-0007,follow_up,Following up: DuPont Tedlar for Laguna Tools Inc.,"Dear FirstName1 LastName1,
 
 I wanted to follow up on my previous message about how DuPont Tedlar films could benefit Laguna Tools Inc.'s Graphics & Signage applications.
 
@@ -83,7 +83,7 @@ Best regards,
 [Your Name]
 DuPont Tedlar Graphics & Signage Team
 "
-FirstName2,LastName2,FirstName2 LastName2,firstname2.lastname2@lagunatools.com,Director of Operations,Laguna Tools Inc.,,Synthetic,0.9,STAKE-0008,STAKE-0008,follow_up,Following up: DuPont Tedlar for Laguna Tools Inc.,"Dear FirstName2 LastName2,
+FirstName2,LastName2,FirstName2 LastName2,firstname2.lastname2@lagunatools.com,Director of Purchasing,Laguna Tools Inc.,,Synthetic,0.9,STAKE-0008,STAKE-0008,follow_up,Following up: DuPont Tedlar for Laguna Tools Inc.,"Dear FirstName2 LastName2,
 
 I wanted to follow up on my previous message about how DuPont Tedlar films could benefit Laguna Tools Inc.'s Graphics & Signage applications.
 
@@ -95,31 +95,7 @@ Best regards,
 [Your Name]
 DuPont Tedlar Graphics & Signage Team
 "
-FirstName3,LastName3,FirstName3 LastName3,firstname3.lastname3@lagunatools.com,CMO,Laguna Tools Inc.,,Synthetic,0.9,STAKE-0009,STAKE-0009,follow_up,Following up: DuPont Tedlar for Laguna Tools Inc.,"Dear FirstName3 LastName3,
-
-I wanted to follow up on my previous message about how DuPont Tedlar films could benefit Laguna Tools Inc.'s Graphics & Signage applications.
-
-Recently, we've helped companies similar to yours achieve improved durability and reduced maintenance costs with our Tedlar solutions. For example, a major retailer was able to reduce signage replacement by 40% after switching to Tedlar-protected graphics.
-
-I'd welcome the opportunity to discuss your specific needs and how our products might address them. Would you have 15 minutes for a quick call next week?
-
-Best regards,
-[Your Name]
-DuPont Tedlar Graphics & Signage Team
-"
-FirstName4,LastName4,FirstName4 LastName4,firstname4.lastname4@lagunatools.com,Supply Chain Manager,Laguna Tools Inc.,,Synthetic,0.8,STAKE-0010,STAKE-0010,follow_up,Following up: DuPont Tedlar for Laguna Tools Inc.,"Dear FirstName4 LastName4,
-
-I wanted to follow up on my previous message about how DuPont Tedlar films could benefit Laguna Tools Inc.'s Graphics & Signage applications.
-
-Recently, we've helped companies similar to yours achieve improved durability and reduced maintenance costs with our Tedlar solutions. For example, a major retailer was able to reduce signage replacement by 40% after switching to Tedlar-protected graphics.
-
-I'd welcome the opportunity to discuss your specific needs and how our products might address them. Would you have 15 minutes for a quick call next week?
-
-Best regards,
-[Your Name]
-DuPont Tedlar Graphics & Signage Team
-"
-FirstName1,LastName1,FirstName1 LastName1,firstname1.lastname1@lintecofamerica.com,Owner,"Lintec of America, Inc.",,Synthetic,0.9,STAKE-0011,STAKE-0011,follow_up,"Following up: DuPont Tedlar for Lintec of America, Inc.","Dear FirstName1 LastName1,
+FirstName1,LastName1,FirstName1 LastName1,firstname1.lastname1@lintecofamerica.com,Business Development Manager,"Lintec of America, Inc.",,Synthetic,0.6,STAKE-0009,STAKE-0009,follow_up,"Following up: DuPont Tedlar for Lintec of America, Inc.","Dear FirstName1 LastName1,
 
 I wanted to follow up on my previous message about how DuPont Tedlar films could benefit Lintec of America, Inc.'s Graphics & Signage applications.
 
@@ -131,7 +107,7 @@ Best regards,
 [Your Name]
 DuPont Tedlar Graphics & Signage Team
 "
-FirstName2,LastName2,FirstName2 LastName2,firstname2.lastname2@lintecofamerica.com,Operations VP,"Lintec of America, Inc.",,Synthetic,0.8,STAKE-0012,STAKE-0012,follow_up,"Following up: DuPont Tedlar for Lintec of America, Inc.","Dear FirstName2 LastName2,
+FirstName2,LastName2,FirstName2 LastName2,firstname2.lastname2@lintecofamerica.com,Production Manager,"Lintec of America, Inc.",,Synthetic,0.8,STAKE-0010,STAKE-0010,follow_up,"Following up: DuPont Tedlar for Lintec of America, Inc.","Dear FirstName2 LastName2,
 
 I wanted to follow up on my previous message about how DuPont Tedlar films could benefit Lintec of America, Inc.'s Graphics & Signage applications.
 
@@ -143,7 +119,31 @@ Best regards,
 [Your Name]
 DuPont Tedlar Graphics & Signage Team
 "
-FirstName1,LastName1,FirstName1 LastName1,firstname1.lastname1@signagedetails.com,Client Relations Manager,Signage Details,,Synthetic,0.6,STAKE-0013,STAKE-0013,follow_up,Following up: DuPont Tedlar for Signage Details,"Dear FirstName1 LastName1,
+FirstName3,LastName3,FirstName3 LastName3,firstname3.lastname3@lintecofamerica.com,Marketing Manager,"Lintec of America, Inc.",,Synthetic,0.7,STAKE-0011,STAKE-0011,follow_up,"Following up: DuPont Tedlar for Lintec of America, Inc.","Dear FirstName3 LastName3,
+
+I wanted to follow up on my previous message about how DuPont Tedlar films could benefit Lintec of America, Inc.'s Graphics & Signage applications.
+
+Recently, we've helped companies similar to yours achieve improved durability and reduced maintenance costs with our Tedlar solutions. For example, a major retailer was able to reduce signage replacement by 40% after switching to Tedlar-protected graphics.
+
+I'd welcome the opportunity to discuss your specific needs and how our products might address them. Would you have 15 minutes for a quick call next week?
+
+Best regards,
+[Your Name]
+DuPont Tedlar Graphics & Signage Team
+"
+FirstName4,LastName4,FirstName4 LastName4,firstname4.lastname4@lintecofamerica.com,CEO,"Lintec of America, Inc.",,Synthetic,0.9,STAKE-0012,STAKE-0012,follow_up,"Following up: DuPont Tedlar for Lintec of America, Inc.","Dear FirstName4 LastName4,
+
+I wanted to follow up on my previous message about how DuPont Tedlar films could benefit Lintec of America, Inc.'s Graphics & Signage applications.
+
+Recently, we've helped companies similar to yours achieve improved durability and reduced maintenance costs with our Tedlar solutions. For example, a major retailer was able to reduce signage replacement by 40% after switching to Tedlar-protected graphics.
+
+I'd welcome the opportunity to discuss your specific needs and how our products might address them. Would you have 15 minutes for a quick call next week?
+
+Best regards,
+[Your Name]
+DuPont Tedlar Graphics & Signage Team
+"
+FirstName1,LastName1,FirstName1 LastName1,firstname1.lastname1@signagedetails.com,Project Manager,Signage Details,,Synthetic,0.7,STAKE-0013,STAKE-0013,follow_up,Following up: DuPont Tedlar for Signage Details,"Dear FirstName1 LastName1,
 
 I wanted to follow up on my previous message about how DuPont Tedlar films could benefit Signage Details's Graphics & Signage applications.
 
@@ -155,7 +155,7 @@ Best regards,
 [Your Name]
 DuPont Tedlar Graphics & Signage Team
 "
-FirstName2,LastName2,FirstName2 LastName2,firstname2.lastname2@signagedetails.com,Creative Director,Signage Details,,Synthetic,0.9,STAKE-0014,STAKE-0014,follow_up,Following up: DuPont Tedlar for Signage Details,"Dear FirstName2 LastName2,
+FirstName2,LastName2,FirstName2 LastName2,firstname2.lastname2@signagedetails.com,Operations Manager,Signage Details,,Synthetic,0.8,STAKE-0014,STAKE-0014,follow_up,Following up: DuPont Tedlar for Signage Details,"Dear FirstName2 LastName2,
 
 I wanted to follow up on my previous message about how DuPont Tedlar films could benefit Signage Details's Graphics & Signage applications.
 
@@ -167,7 +167,7 @@ Best regards,
 [Your Name]
 DuPont Tedlar Graphics & Signage Team
 "
-FirstName3,LastName3,FirstName3 LastName3,firstname3.lastname3@signagedetails.com,VP of Purchasing,Signage Details,,Synthetic,0.8,STAKE-0015,STAKE-0015,follow_up,Following up: DuPont Tedlar for Signage Details,"Dear FirstName3 LastName3,
+FirstName3,LastName3,FirstName3 LastName3,firstname3.lastname3@signagedetails.com,Chief Financial Officer,Signage Details,,Synthetic,0.9,STAKE-0015,STAKE-0015,follow_up,Following up: DuPont Tedlar for Signage Details,"Dear FirstName3 LastName3,
 
 I wanted to follow up on my previous message about how DuPont Tedlar films could benefit Signage Details's Graphics & Signage applications.
 
@@ -179,19 +179,7 @@ Best regards,
 [Your Name]
 DuPont Tedlar Graphics & Signage Team
 "
-FirstName4,LastName4,FirstName4 LastName4,firstname4.lastname4@signagedetails.com,Director of Operations,Signage Details,,Synthetic,0.9,STAKE-0016,STAKE-0016,follow_up,Following up: DuPont Tedlar for Signage Details,"Dear FirstName4 LastName4,
-
-I wanted to follow up on my previous message about how DuPont Tedlar films could benefit Signage Details's Graphics & Signage applications.
-
-Recently, we've helped companies similar to yours achieve improved durability and reduced maintenance costs with our Tedlar solutions. For example, a major retailer was able to reduce signage replacement by 40% after switching to Tedlar-protected graphics.
-
-I'd welcome the opportunity to discuss your specific needs and how our products might address them. Would you have 15 minutes for a quick call next week?
-
-Best regards,
-[Your Name]
-DuPont Tedlar Graphics & Signage Team
-"
-FirstName1,LastName1,FirstName1 LastName1,firstname1.lastname1@3acompositesusa.com,Marketing Director,"3A Composites USA, Inc.",,Synthetic,0.9,STAKE-0017,STAKE-0017,follow_up,"Following up: DuPont Tedlar for 3A Composites USA, Inc.","Dear FirstName1 LastName1,
+FirstName1,LastName1,FirstName1 LastName1,firstname1.lastname1@3acompositesusa.com,VP of Operations,"3A Composites USA, Inc.",,Synthetic,0.8,STAKE-0016,STAKE-0016,follow_up,"Following up: DuPont Tedlar for 3A Composites USA, Inc.","Dear FirstName1 LastName1,
 
 I wanted to follow up on my previous message about how DuPont Tedlar films could benefit 3A Composites USA, Inc.'s Graphics & Signage applications.
 
@@ -203,7 +191,7 @@ Best regards,
 [Your Name]
 DuPont Tedlar Graphics & Signage Team
 "
-FirstName2,LastName2,FirstName2 LastName2,firstname2.lastname2@3acompositesusa.com,Sales Manager,"3A Composites USA, Inc.",,Synthetic,0.6,STAKE-0018,STAKE-0018,follow_up,"Following up: DuPont Tedlar for 3A Composites USA, Inc.","Dear FirstName2 LastName2,
+FirstName2,LastName2,FirstName2 LastName2,firstname2.lastname2@3acompositesusa.com,Sales Director,"3A Composites USA, Inc.",,Synthetic,0.9,STAKE-0017,STAKE-0017,follow_up,"Following up: DuPont Tedlar for 3A Composites USA, Inc.","Dear FirstName2 LastName2,
 
 I wanted to follow up on my previous message about how DuPont Tedlar films could benefit 3A Composites USA, Inc.'s Graphics & Signage applications.
 
@@ -215,7 +203,7 @@ Best regards,
 [Your Name]
 DuPont Tedlar Graphics & Signage Team
 "
-FirstName3,LastName3,FirstName3 LastName3,firstname3.lastname3@3acompositesusa.com,Sourcing Manager,"3A Composites USA, Inc.",,Synthetic,0.8,STAKE-0019,STAKE-0019,follow_up,"Following up: DuPont Tedlar for 3A Composites USA, Inc.","Dear FirstName3 LastName3,
+FirstName3,LastName3,FirstName3 LastName3,firstname3.lastname3@3acompositesusa.com,Supply Chain Manager,"3A Composites USA, Inc.",,Synthetic,0.8,STAKE-0018,STAKE-0018,follow_up,"Following up: DuPont Tedlar for 3A Composites USA, Inc.","Dear FirstName3 LastName3,
 
 I wanted to follow up on my previous message about how DuPont Tedlar films could benefit 3A Composites USA, Inc.'s Graphics & Signage applications.
 
@@ -227,7 +215,7 @@ Best regards,
 [Your Name]
 DuPont Tedlar Graphics & Signage Team
 "
-FirstName4,LastName4,FirstName4 LastName4,firstname4.lastname4@3acompositesusa.com,CTO,"3A Composites USA, Inc.",,Synthetic,0.9,STAKE-0020,STAKE-0020,follow_up,"Following up: DuPont Tedlar for 3A Composites USA, Inc.","Dear FirstName4 LastName4,
+FirstName4,LastName4,FirstName4 LastName4,firstname4.lastname4@3acompositesusa.com,Marketing VP,"3A Composites USA, Inc.",,Synthetic,0.7,STAKE-0019,STAKE-0019,follow_up,"Following up: DuPont Tedlar for 3A Composites USA, Inc.","Dear FirstName4 LastName4,
 
 I wanted to follow up on my previous message about how DuPont Tedlar films could benefit 3A Composites USA, Inc.'s Graphics & Signage applications.
 
@@ -239,7 +227,7 @@ Best regards,
 [Your Name]
 DuPont Tedlar Graphics & Signage Team
 "
-FirstName1,LastName1,FirstName1 LastName1,firstname1.lastname1@3m.com,Production Manager,3M Commercial Solutions,,Synthetic,0.8,STAKE-0021,STAKE-0021,follow_up,Following up: DuPont Tedlar for 3M Commercial Solutions,"Dear FirstName1 LastName1,
+FirstName1,LastName1,FirstName1 LastName1,firstname1.lastname1@3m.com,Sales Manager,3M Commercial Solutions,,Synthetic,0.6,STAKE-0020,STAKE-0020,follow_up,Following up: DuPont Tedlar for 3M Commercial Solutions,"Dear FirstName1 LastName1,
 
 I wanted to follow up on my previous message about how DuPont Tedlar films could benefit 3M Commercial Solutions's Graphics & Signage applications.
 
@@ -251,7 +239,7 @@ Best regards,
 [Your Name]
 DuPont Tedlar Graphics & Signage Team
 "
-FirstName2,LastName2,FirstName2 LastName2,firstname2.lastname2@3m.com,Supply Chain Manager,3M Commercial Solutions,,Synthetic,0.8,STAKE-0022,STAKE-0022,follow_up,Following up: DuPont Tedlar for 3M Commercial Solutions,"Dear FirstName2 LastName2,
+FirstName2,LastName2,FirstName2 LastName2,firstname2.lastname2@3m.com,Marketing Director,3M Commercial Solutions,,Synthetic,0.9,STAKE-0021,STAKE-0021,follow_up,Following up: DuPont Tedlar for 3M Commercial Solutions,"Dear FirstName2 LastName2,
 
 I wanted to follow up on my previous message about how DuPont Tedlar films could benefit 3M Commercial Solutions's Graphics & Signage applications.
 
@@ -263,31 +251,7 @@ Best regards,
 [Your Name]
 DuPont Tedlar Graphics & Signage Team
 "
-FirstName3,LastName3,FirstName3 LastName3,firstname3.lastname3@3m.com,Director of Technology,3M Commercial Solutions,,Synthetic,0.9,STAKE-0023,STAKE-0023,follow_up,Following up: DuPont Tedlar for 3M Commercial Solutions,"Dear FirstName3 LastName3,
-
-I wanted to follow up on my previous message about how DuPont Tedlar films could benefit 3M Commercial Solutions's Graphics & Signage applications.
-
-Recently, we've helped companies similar to yours achieve improved durability and reduced maintenance costs with our Tedlar solutions. For example, a major retailer was able to reduce signage replacement by 40% after switching to Tedlar-protected graphics.
-
-I'd welcome the opportunity to discuss your specific needs and how our products might address them. Would you have 15 minutes for a quick call next week?
-
-Best regards,
-[Your Name]
-DuPont Tedlar Graphics & Signage Team
-"
-FirstName4,LastName4,FirstName4 LastName4,firstname4.lastname4@3m.com,CFO,3M Commercial Solutions,,Synthetic,0.9,STAKE-0024,STAKE-0024,follow_up,Following up: DuPont Tedlar for 3M Commercial Solutions,"Dear FirstName4 LastName4,
-
-I wanted to follow up on my previous message about how DuPont Tedlar films could benefit 3M Commercial Solutions's Graphics & Signage applications.
-
-Recently, we've helped companies similar to yours achieve improved durability and reduced maintenance costs with our Tedlar solutions. For example, a major retailer was able to reduce signage replacement by 40% after switching to Tedlar-protected graphics.
-
-I'd welcome the opportunity to discuss your specific needs and how our products might address them. Would you have 15 minutes for a quick call next week?
-
-Best regards,
-[Your Name]
-DuPont Tedlar Graphics & Signage Team
-"
-FirstName1,LastName1,FirstName1 LastName1,firstname1.lastname1@arkramos.com,Innovation Manager,A.R.K. Ramos Foundry & Mfg. Co.,,Synthetic,0.7,STAKE-0025,STAKE-0025,follow_up,Following up: DuPont Tedlar for A.R.K. Ramos Foundry & Mfg. Co.,"Dear FirstName1 LastName1,
+FirstName1,LastName1,FirstName1 LastName1,firstname1.lastname1@arkramos.com,VP of Operations,A.R.K. Ramos Foundry & Mfg. Co.,,Synthetic,0.8,STAKE-0022,STAKE-0022,follow_up,Following up: DuPont Tedlar for A.R.K. Ramos Foundry & Mfg. Co.,"Dear FirstName1 LastName1,
 
 I wanted to follow up on my previous message about how DuPont Tedlar films could benefit A.R.K. Ramos Foundry & Mfg. Co.'s Graphics & Signage applications.
 
@@ -299,7 +263,7 @@ Best regards,
 [Your Name]
 DuPont Tedlar Graphics & Signage Team
 "
-FirstName2,LastName2,FirstName2 LastName2,firstname2.lastname2@arkramos.com,Purchasing Director,A.R.K. Ramos Foundry & Mfg. Co.,,Synthetic,0.9,STAKE-0026,STAKE-0026,follow_up,Following up: DuPont Tedlar for A.R.K. Ramos Foundry & Mfg. Co.,"Dear FirstName2 LastName2,
+FirstName2,LastName2,FirstName2 LastName2,firstname2.lastname2@arkramos.com,Sales Manager,A.R.K. Ramos Foundry & Mfg. Co.,,Synthetic,0.6,STAKE-0023,STAKE-0023,follow_up,Following up: DuPont Tedlar for A.R.K. Ramos Foundry & Mfg. Co.,"Dear FirstName2 LastName2,
 
 I wanted to follow up on my previous message about how DuPont Tedlar films could benefit A.R.K. Ramos Foundry & Mfg. Co.'s Graphics & Signage applications.
 
@@ -311,7 +275,7 @@ Best regards,
 [Your Name]
 DuPont Tedlar Graphics & Signage Team
 "
-FirstName3,LastName3,FirstName3 LastName3,firstname3.lastname3@arkramos.com,VP of Operations,A.R.K. Ramos Foundry & Mfg. Co.,,Synthetic,0.8,STAKE-0027,STAKE-0027,follow_up,Following up: DuPont Tedlar for A.R.K. Ramos Foundry & Mfg. Co.,"Dear FirstName3 LastName3,
+FirstName3,LastName3,FirstName3 LastName3,firstname3.lastname3@arkramos.com,Procurement Manager,A.R.K. Ramos Foundry & Mfg. Co.,,Synthetic,0.8,STAKE-0024,STAKE-0024,follow_up,Following up: DuPont Tedlar for A.R.K. Ramos Foundry & Mfg. Co.,"Dear FirstName3 LastName3,
 
 I wanted to follow up on my previous message about how DuPont Tedlar films could benefit A.R.K. Ramos Foundry & Mfg. Co.'s Graphics & Signage applications.
 
@@ -323,19 +287,7 @@ Best regards,
 [Your Name]
 DuPont Tedlar Graphics & Signage Team
 "
-FirstName4,LastName4,FirstName4 LastName4,firstname4.lastname4@arkramos.com,Sales VP,A.R.K. Ramos Foundry & Mfg. Co.,,Synthetic,0.6,STAKE-0028,STAKE-0028,follow_up,Following up: DuPont Tedlar for A.R.K. Ramos Foundry & Mfg. Co.,"Dear FirstName4 LastName4,
-
-I wanted to follow up on my previous message about how DuPont Tedlar films could benefit A.R.K. Ramos Foundry & Mfg. Co.'s Graphics & Signage applications.
-
-Recently, we've helped companies similar to yours achieve improved durability and reduced maintenance costs with our Tedlar solutions. For example, a major retailer was able to reduce signage replacement by 40% after switching to Tedlar-protected graphics.
-
-I'd welcome the opportunity to discuss your specific needs and how our products might address them. Would you have 15 minutes for a quick call next week?
-
-Best regards,
-[Your Name]
-DuPont Tedlar Graphics & Signage Team
-"
-FirstName1,LastName1,FirstName1 LastName1,firstname1.lastname1@abitech.com,President,Abitech,,Synthetic,0.9,STAKE-0029,STAKE-0029,follow_up,Following up: DuPont Tedlar for Abitech,"Dear FirstName1 LastName1,
+FirstName1,LastName1,FirstName1 LastName1,firstname1.lastname1@abitech.com,Facility Manager,Abitech,,Synthetic,0.8,STAKE-0025,STAKE-0025,follow_up,Following up: DuPont Tedlar for Abitech,"Dear FirstName1 LastName1,
 
 I wanted to follow up on my previous message about how DuPont Tedlar films could benefit Abitech's Graphics & Signage applications.
 
@@ -347,7 +299,7 @@ Best regards,
 [Your Name]
 DuPont Tedlar Graphics & Signage Team
 "
-FirstName2,LastName2,FirstName2 LastName2,firstname2.lastname2@abitech.com,Project Manager,Abitech,,Synthetic,0.7,STAKE-0030,STAKE-0030,follow_up,Following up: DuPont Tedlar for Abitech,"Dear FirstName2 LastName2,
+FirstName2,LastName2,FirstName2 LastName2,firstname2.lastname2@abitech.com,Founder,Abitech,,Synthetic,0.9,STAKE-0026,STAKE-0026,follow_up,Following up: DuPont Tedlar for Abitech,"Dear FirstName2 LastName2,
 
 I wanted to follow up on my previous message about how DuPont Tedlar films could benefit Abitech's Graphics & Signage applications.
 
@@ -359,31 +311,7 @@ Best regards,
 [Your Name]
 DuPont Tedlar Graphics & Signage Team
 "
-FirstName3,LastName3,FirstName3 LastName3,firstname3.lastname3@abitech.com,Supply Chain Manager,Abitech,,Synthetic,0.8,STAKE-0031,STAKE-0031,follow_up,Following up: DuPont Tedlar for Abitech,"Dear FirstName3 LastName3,
-
-I wanted to follow up on my previous message about how DuPont Tedlar films could benefit Abitech's Graphics & Signage applications.
-
-Recently, we've helped companies similar to yours achieve improved durability and reduced maintenance costs with our Tedlar solutions. For example, a major retailer was able to reduce signage replacement by 40% after switching to Tedlar-protected graphics.
-
-I'd welcome the opportunity to discuss your specific needs and how our products might address them. Would you have 15 minutes for a quick call next week?
-
-Best regards,
-[Your Name]
-DuPont Tedlar Graphics & Signage Team
-"
-FirstName4,LastName4,FirstName4 LastName4,firstname4.lastname4@abitech.com,Director of Sales,Abitech,,Synthetic,0.9,STAKE-0032,STAKE-0032,follow_up,Following up: DuPont Tedlar for Abitech,"Dear FirstName4 LastName4,
-
-I wanted to follow up on my previous message about how DuPont Tedlar films could benefit Abitech's Graphics & Signage applications.
-
-Recently, we've helped companies similar to yours achieve improved durability and reduced maintenance costs with our Tedlar solutions. For example, a major retailer was able to reduce signage replacement by 40% after switching to Tedlar-protected graphics.
-
-I'd welcome the opportunity to discuss your specific needs and how our products might address them. Would you have 15 minutes for a quick call next week?
-
-Best regards,
-[Your Name]
-DuPont Tedlar Graphics & Signage Team
-"
-FirstName1,LastName1,FirstName1 LastName1,firstname1.lastname1@admaxdisplays.com,Chief Operating Officer,ADMAX Exhibit & Display Ltd.,,Synthetic,0.9,STAKE-0033,STAKE-0033,follow_up,Following up: DuPont Tedlar for ADMAX Exhibit & Display Ltd.,"Dear FirstName1 LastName1,
+FirstName1,LastName1,FirstName1 LastName1,firstname1.lastname1@admaxdisplays.com,Technical Manager,ADMAX Exhibit & Display Ltd.,,Synthetic,0.7,STAKE-0027,STAKE-0027,follow_up,Following up: DuPont Tedlar for ADMAX Exhibit & Display Ltd.,"Dear FirstName1 LastName1,
 
 I wanted to follow up on my previous message about how DuPont Tedlar films could benefit ADMAX Exhibit & Display Ltd.'s Graphics & Signage applications.
 
@@ -395,7 +323,7 @@ Best regards,
 [Your Name]
 DuPont Tedlar Graphics & Signage Team
 "
-FirstName2,LastName2,FirstName2 LastName2,firstname2.lastname2@admaxdisplays.com,R&D Manager,ADMAX Exhibit & Display Ltd.,,Synthetic,0.7,STAKE-0034,STAKE-0034,follow_up,Following up: DuPont Tedlar for ADMAX Exhibit & Display Ltd.,"Dear FirstName2 LastName2,
+FirstName2,LastName2,FirstName2 LastName2,firstname2.lastname2@admaxdisplays.com,Director of Purchasing,ADMAX Exhibit & Display Ltd.,,Synthetic,0.9,STAKE-0028,STAKE-0028,follow_up,Following up: DuPont Tedlar for ADMAX Exhibit & Display Ltd.,"Dear FirstName2 LastName2,
 
 I wanted to follow up on my previous message about how DuPont Tedlar films could benefit ADMAX Exhibit & Display Ltd.'s Graphics & Signage applications.
 
@@ -407,31 +335,7 @@ Best regards,
 [Your Name]
 DuPont Tedlar Graphics & Signage Team
 "
-FirstName3,LastName3,FirstName3 LastName3,firstname3.lastname3@admaxdisplays.com,Sales Director,ADMAX Exhibit & Display Ltd.,,Synthetic,0.9,STAKE-0035,STAKE-0035,follow_up,Following up: DuPont Tedlar for ADMAX Exhibit & Display Ltd.,"Dear FirstName3 LastName3,
-
-I wanted to follow up on my previous message about how DuPont Tedlar films could benefit ADMAX Exhibit & Display Ltd.'s Graphics & Signage applications.
-
-Recently, we've helped companies similar to yours achieve improved durability and reduced maintenance costs with our Tedlar solutions. For example, a major retailer was able to reduce signage replacement by 40% after switching to Tedlar-protected graphics.
-
-I'd welcome the opportunity to discuss your specific needs and how our products might address them. Would you have 15 minutes for a quick call next week?
-
-Best regards,
-[Your Name]
-DuPont Tedlar Graphics & Signage Team
-"
-FirstName4,LastName4,FirstName4 LastName4,firstname4.lastname4@admaxdisplays.com,Marketing Director,ADMAX Exhibit & Display Ltd.,,Synthetic,0.9,STAKE-0036,STAKE-0036,follow_up,Following up: DuPont Tedlar for ADMAX Exhibit & Display Ltd.,"Dear FirstName4 LastName4,
-
-I wanted to follow up on my previous message about how DuPont Tedlar films could benefit ADMAX Exhibit & Display Ltd.'s Graphics & Signage applications.
-
-Recently, we've helped companies similar to yours achieve improved durability and reduced maintenance costs with our Tedlar solutions. For example, a major retailer was able to reduce signage replacement by 40% after switching to Tedlar-protected graphics.
-
-I'd welcome the opportunity to discuss your specific needs and how our products might address them. Would you have 15 minutes for a quick call next week?
-
-Best regards,
-[Your Name]
-DuPont Tedlar Graphics & Signage Team
-"
-FirstName1,LastName1,FirstName1 LastName1,firstname1.lastname1@aglaminators.com,Facility Manager,"Advanced Greig Laminators, Inc.",,Synthetic,0.8,STAKE-0037,STAKE-0037,follow_up,"Following up: DuPont Tedlar for Advanced Greig Laminators, Inc.","Dear FirstName1 LastName1,
+FirstName1,LastName1,FirstName1 LastName1,firstname1.lastname1@aglaminators.com,Sourcing Manager,"Advanced Greig Laminators, Inc.",,Synthetic,0.8,STAKE-0029,STAKE-0029,follow_up,"Following up: DuPont Tedlar for Advanced Greig Laminators, Inc.","Dear FirstName1 LastName1,
 
 I wanted to follow up on my previous message about how DuPont Tedlar films could benefit Advanced Greig Laminators, Inc.'s Graphics & Signage applications.
 
@@ -443,7 +347,7 @@ Best regards,
 [Your Name]
 DuPont Tedlar Graphics & Signage Team
 "
-FirstName2,LastName2,FirstName2 LastName2,firstname2.lastname2@aglaminators.com,Director of Technology,"Advanced Greig Laminators, Inc.",,Synthetic,0.9,STAKE-0038,STAKE-0038,follow_up,"Following up: DuPont Tedlar for Advanced Greig Laminators, Inc.","Dear FirstName2 LastName2,
+FirstName2,LastName2,FirstName2 LastName2,firstname2.lastname2@aglaminators.com,Client Relations Manager,"Advanced Greig Laminators, Inc.",,Synthetic,0.6,STAKE-0030,STAKE-0030,follow_up,"Following up: DuPont Tedlar for Advanced Greig Laminators, Inc.","Dear FirstName2 LastName2,
 
 I wanted to follow up on my previous message about how DuPont Tedlar films could benefit Advanced Greig Laminators, Inc.'s Graphics & Signage applications.
 
@@ -455,7 +359,7 @@ Best regards,
 [Your Name]
 DuPont Tedlar Graphics & Signage Team
 "
-FirstName3,LastName3,FirstName3 LastName3,firstname3.lastname3@aglaminators.com,Chief Executive Officer,"Advanced Greig Laminators, Inc.",,Synthetic,0.9,STAKE-0039,STAKE-0039,follow_up,"Following up: DuPont Tedlar for Advanced Greig Laminators, Inc.","Dear FirstName3 LastName3,
+FirstName3,LastName3,FirstName3 LastName3,firstname3.lastname3@aglaminators.com,Technical Manager,"Advanced Greig Laminators, Inc.",,Synthetic,0.7,STAKE-0031,STAKE-0031,follow_up,"Following up: DuPont Tedlar for Advanced Greig Laminators, Inc.","Dear FirstName3 LastName3,
 
 I wanted to follow up on my previous message about how DuPont Tedlar films could benefit Advanced Greig Laminators, Inc.'s Graphics & Signage applications.
 
@@ -467,7 +371,19 @@ Best regards,
 [Your Name]
 DuPont Tedlar Graphics & Signage Team
 "
-FirstName1,LastName1,FirstName1 LastName1,firstname1.lastname1@advantageinnovations.com,Technical Manager,"Advantage Innovations, Inc",,Synthetic,0.7,STAKE-0040,STAKE-0040,follow_up,"Following up: DuPont Tedlar for Advantage Innovations, Inc","Dear FirstName1 LastName1,
+FirstName4,LastName4,FirstName4 LastName4,firstname4.lastname4@aglaminators.com,Production Manager,"Advanced Greig Laminators, Inc.",,Synthetic,0.8,STAKE-0032,STAKE-0032,follow_up,"Following up: DuPont Tedlar for Advanced Greig Laminators, Inc.","Dear FirstName4 LastName4,
+
+I wanted to follow up on my previous message about how DuPont Tedlar films could benefit Advanced Greig Laminators, Inc.'s Graphics & Signage applications.
+
+Recently, we've helped companies similar to yours achieve improved durability and reduced maintenance costs with our Tedlar solutions. For example, a major retailer was able to reduce signage replacement by 40% after switching to Tedlar-protected graphics.
+
+I'd welcome the opportunity to discuss your specific needs and how our products might address them. Would you have 15 minutes for a quick call next week?
+
+Best regards,
+[Your Name]
+DuPont Tedlar Graphics & Signage Team
+"
+FirstName1,LastName1,FirstName1 LastName1,firstname1.lastname1@advantageinnovations.com,VP of Purchasing,"Advantage Innovations, Inc",,Synthetic,0.8,STAKE-0033,STAKE-0033,follow_up,"Following up: DuPont Tedlar for Advantage Innovations, Inc","Dear FirstName1 LastName1,
 
 I wanted to follow up on my previous message about how DuPont Tedlar films could benefit Advantage Innovations, Inc's Graphics & Signage applications.
 
@@ -479,7 +395,7 @@ Best regards,
 [Your Name]
 DuPont Tedlar Graphics & Signage Team
 "
-FirstName2,LastName2,FirstName2 LastName2,firstname2.lastname2@advantageinnovations.com,Chief Financial Officer,"Advantage Innovations, Inc",,Synthetic,0.9,STAKE-0041,STAKE-0041,follow_up,"Following up: DuPont Tedlar for Advantage Innovations, Inc","Dear FirstName2 LastName2,
+FirstName2,LastName2,FirstName2 LastName2,firstname2.lastname2@advantageinnovations.com,Business Development Manager,"Advantage Innovations, Inc",,Synthetic,0.6,STAKE-0034,STAKE-0034,follow_up,"Following up: DuPont Tedlar for Advantage Innovations, Inc","Dear FirstName2 LastName2,
 
 I wanted to follow up on my previous message about how DuPont Tedlar films could benefit Advantage Innovations, Inc's Graphics & Signage applications.
 
@@ -491,7 +407,7 @@ Best regards,
 [Your Name]
 DuPont Tedlar Graphics & Signage Team
 "
-FirstName3,LastName3,FirstName3 LastName3,firstname3.lastname3@advantageinnovations.com,Brand Manager,"Advantage Innovations, Inc",,Synthetic,0.7,STAKE-0042,STAKE-0042,follow_up,"Following up: DuPont Tedlar for Advantage Innovations, Inc","Dear FirstName3 LastName3,
+FirstName3,LastName3,FirstName3 LastName3,firstname3.lastname3@advantageinnovations.com,Operations Director,"Advantage Innovations, Inc",,Synthetic,0.9,STAKE-0035,STAKE-0035,follow_up,"Following up: DuPont Tedlar for Advantage Innovations, Inc","Dear FirstName3 LastName3,
 
 I wanted to follow up on my previous message about how DuPont Tedlar films could benefit Advantage Innovations, Inc's Graphics & Signage applications.
 
@@ -503,19 +419,7 @@ Best regards,
 [Your Name]
 DuPont Tedlar Graphics & Signage Team
 "
-FirstName4,LastName4,FirstName4 LastName4,firstname4.lastname4@advantageinnovations.com,Production Manager,"Advantage Innovations, Inc",,Synthetic,0.8,STAKE-0043,STAKE-0043,follow_up,"Following up: DuPont Tedlar for Advantage Innovations, Inc","Dear FirstName4 LastName4,
-
-I wanted to follow up on my previous message about how DuPont Tedlar films could benefit Advantage Innovations, Inc's Graphics & Signage applications.
-
-Recently, we've helped companies similar to yours achieve improved durability and reduced maintenance costs with our Tedlar solutions. For example, a major retailer was able to reduce signage replacement by 40% after switching to Tedlar-protected graphics.
-
-I'd welcome the opportunity to discuss your specific needs and how our products might address them. Would you have 15 minutes for a quick call next week?
-
-Best regards,
-[Your Name]
-DuPont Tedlar Graphics & Signage Team
-"
-FirstName1,LastName1,FirstName1 LastName1,firstname1.lastname1@aludecor.com,President,Aludecor,,Synthetic,0.9,STAKE-0044,STAKE-0044,follow_up,Following up: DuPont Tedlar for Aludecor,"Dear FirstName1 LastName1,
+FirstName1,LastName1,FirstName1 LastName1,firstname1.lastname1@aludecor.com,Purchasing VP,Aludecor,,Synthetic,0.8,STAKE-0036,STAKE-0036,follow_up,Following up: DuPont Tedlar for Aludecor,"Dear FirstName1 LastName1,
 
 I wanted to follow up on my previous message about how DuPont Tedlar films could benefit Aludecor's Graphics & Signage applications.
 
@@ -527,7 +431,7 @@ Best regards,
 [Your Name]
 DuPont Tedlar Graphics & Signage Team
 "
-FirstName2,LastName2,FirstName2 LastName2,firstname2.lastname2@aludecor.com,Creative Director,Aludecor,,Synthetic,0.9,STAKE-0045,STAKE-0045,follow_up,Following up: DuPont Tedlar for Aludecor,"Dear FirstName2 LastName2,
+FirstName2,LastName2,FirstName2 LastName2,firstname2.lastname2@aludecor.com,Production Manager,Aludecor,,Synthetic,0.8,STAKE-0037,STAKE-0037,follow_up,Following up: DuPont Tedlar for Aludecor,"Dear FirstName2 LastName2,
 
 I wanted to follow up on my previous message about how DuPont Tedlar films could benefit Aludecor's Graphics & Signage applications.
 
@@ -539,7 +443,7 @@ Best regards,
 [Your Name]
 DuPont Tedlar Graphics & Signage Team
 "
-FirstName3,LastName3,FirstName3 LastName3,firstname3.lastname3@aludecor.com,Director of Technology,Aludecor,,Synthetic,0.9,STAKE-0046,STAKE-0046,follow_up,Following up: DuPont Tedlar for Aludecor,"Dear FirstName3 LastName3,
+FirstName3,LastName3,FirstName3 LastName3,firstname3.lastname3@aludecor.com,Technical Manager,Aludecor,,Synthetic,0.7,STAKE-0038,STAKE-0038,follow_up,Following up: DuPont Tedlar for Aludecor,"Dear FirstName3 LastName3,
 
 I wanted to follow up on my previous message about how DuPont Tedlar films could benefit Aludecor's Graphics & Signage applications.
 
@@ -551,7 +455,7 @@ Best regards,
 [Your Name]
 DuPont Tedlar Graphics & Signage Team
 "
-FirstName4,LastName4,FirstName4 LastName4,firstname4.lastname4@aludecor.com,Facility Manager,Aludecor,,Synthetic,0.8,STAKE-0047,STAKE-0047,follow_up,Following up: DuPont Tedlar for Aludecor,"Dear FirstName4 LastName4,
+FirstName4,LastName4,FirstName4 LastName4,firstname4.lastname4@aludecor.com,Brand Manager,Aludecor,,Synthetic,0.7,STAKE-0039,STAKE-0039,follow_up,Following up: DuPont Tedlar for Aludecor,"Dear FirstName4 LastName4,
 
 I wanted to follow up on my previous message about how DuPont Tedlar films could benefit Aludecor's Graphics & Signage applications.
 
@@ -563,7 +467,7 @@ Best regards,
 [Your Name]
 DuPont Tedlar Graphics & Signage Team
 "
-FirstName1,LastName1,FirstName1 LastName1,firstname1.lastname1@arlon.com,Marketing VP,Arlon Graphics,,Synthetic,0.7,STAKE-0048,STAKE-0048,follow_up,Following up: DuPont Tedlar for Arlon Graphics,"Dear FirstName1 LastName1,
+FirstName1,LastName1,FirstName1 LastName1,firstname1.lastname1@arlon.com,Sales Manager,Arlon Graphics,,Synthetic,0.6,STAKE-0040,STAKE-0040,follow_up,Following up: DuPont Tedlar for Arlon Graphics,"Dear FirstName1 LastName1,
 
 I wanted to follow up on my previous message about how DuPont Tedlar films could benefit Arlon Graphics's Graphics & Signage applications.
 
@@ -575,7 +479,7 @@ Best regards,
 [Your Name]
 DuPont Tedlar Graphics & Signage Team
 "
-FirstName2,LastName2,FirstName2 LastName2,firstname2.lastname2@arlon.com,Operations VP,Arlon Graphics,,Synthetic,0.8,STAKE-0049,STAKE-0049,follow_up,Following up: DuPont Tedlar for Arlon Graphics,"Dear FirstName2 LastName2,
+FirstName2,LastName2,FirstName2 LastName2,firstname2.lastname2@arlon.com,Engineering Manager,Arlon Graphics,,Synthetic,0.7,STAKE-0041,STAKE-0041,follow_up,Following up: DuPont Tedlar for Arlon Graphics,"Dear FirstName2 LastName2,
 
 I wanted to follow up on my previous message about how DuPont Tedlar films could benefit Arlon Graphics's Graphics & Signage applications.
 
@@ -587,7 +491,7 @@ Best regards,
 [Your Name]
 DuPont Tedlar Graphics & Signage Team
 "
-FirstName3,LastName3,FirstName3 LastName3,firstname3.lastname3@arlon.com,Director of Technology,Arlon Graphics,,Synthetic,0.9,STAKE-0050,STAKE-0050,follow_up,Following up: DuPont Tedlar for Arlon Graphics,"Dear FirstName3 LastName3,
+FirstName3,LastName3,FirstName3 LastName3,firstname3.lastname3@arlon.com,CTO,Arlon Graphics,,Synthetic,0.9,STAKE-0042,STAKE-0042,follow_up,Following up: DuPont Tedlar for Arlon Graphics,"Dear FirstName3 LastName3,
 
 I wanted to follow up on my previous message about how DuPont Tedlar films could benefit Arlon Graphics's Graphics & Signage applications.
 
@@ -599,19 +503,7 @@ Best regards,
 [Your Name]
 DuPont Tedlar Graphics & Signage Team
 "
-FirstName4,LastName4,FirstName4 LastName4,firstname4.lastname4@arlon.com,Sales Manager,Arlon Graphics,,Synthetic,0.6,STAKE-0051,STAKE-0051,follow_up,Following up: DuPont Tedlar for Arlon Graphics,"Dear FirstName4 LastName4,
-
-I wanted to follow up on my previous message about how DuPont Tedlar films could benefit Arlon Graphics's Graphics & Signage applications.
-
-Recently, we've helped companies similar to yours achieve improved durability and reduced maintenance costs with our Tedlar solutions. For example, a major retailer was able to reduce signage replacement by 40% after switching to Tedlar-protected graphics.
-
-I'd welcome the opportunity to discuss your specific needs and how our products might address them. Would you have 15 minutes for a quick call next week?
-
-Best regards,
-[Your Name]
-DuPont Tedlar Graphics & Signage Team
-"
-FirstName1,LastName1,FirstName1 LastName1,firstname1.lastname1@graphics.averydennison.com,VP of Purchasing,Avery Dennison Graphics Solutions,,Synthetic,0.8,STAKE-0052,STAKE-0052,follow_up,Following up: DuPont Tedlar for Avery Dennison Graphics Solutions,"Dear FirstName1 LastName1,
+FirstName1,LastName1,FirstName1 LastName1,firstname1.lastname1@graphics.averydennison.com,Purchasing Director,Avery Dennison Graphics Solutions,,Synthetic,0.9,STAKE-0043,STAKE-0043,follow_up,Following up: DuPont Tedlar for Avery Dennison Graphics Solutions,"Dear FirstName1 LastName1,
 
 I wanted to follow up on my previous message about how DuPont Tedlar films could benefit Avery Dennison Graphics Solutions's Graphics & Signage applications.
 
@@ -623,7 +515,7 @@ Best regards,
 [Your Name]
 DuPont Tedlar Graphics & Signage Team
 "
-FirstName2,LastName2,FirstName2 LastName2,firstname2.lastname2@graphics.averydennison.com,Director of Technology,Avery Dennison Graphics Solutions,,Synthetic,0.9,STAKE-0053,STAKE-0053,follow_up,Following up: DuPont Tedlar for Avery Dennison Graphics Solutions,"Dear FirstName2 LastName2,
+FirstName2,LastName2,FirstName2 LastName2,firstname2.lastname2@graphics.averydennison.com,Project Manager,Avery Dennison Graphics Solutions,,Synthetic,0.7,STAKE-0044,STAKE-0044,follow_up,Following up: DuPont Tedlar for Avery Dennison Graphics Solutions,"Dear FirstName2 LastName2,
 
 I wanted to follow up on my previous message about how DuPont Tedlar films could benefit Avery Dennison Graphics Solutions's Graphics & Signage applications.
 

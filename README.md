@@ -18,7 +18,7 @@ This project is an AI-powered sales lead generation system for DuPont Tedlar's G
    ```
    pip install -r requirements.txt
    ```
-3. Create a `.env` file in the root directory with your API keys (see `.env.example` for format)
+3. Create a `.env` file in the root directory with your API keys (see `.env.example` for format) --for future work
 
 ## Usage
 
@@ -33,7 +33,7 @@ This will:
 2. Enrich company information with additional details
 3. Find key stakeholders at each company
 4. Score and qualify leads based on relevance to DuPont Tedlar
-5. Generate personalized outreach messages for each stakeholder
+5. Generate personalized outreach messages for each stakeholder (future work)
 6. Create and open an interactive dashboard with prioritized leads
 
 ## Project Structure
@@ -66,7 +66,7 @@ Below is screenshot of the Avery Dennison demo:
 ![Avery Dennison Demo](./assets/avery_demo_screenshot.png)
 *Example of qualified lead details for Avery Dennison Graphics Solutions*
 
-## Integration Possibilities
+## Integration Possibilities (Future Work)
 
 The system can further be integrated with:
 - LinkedIn Sales Navigator API for enhanced stakeholder identification
